@@ -52,6 +52,10 @@ nav a:hover small {
     top: -6px;
 }
 
+.nav-item.active {
+    color: var(--bs-danger);
+}
+
 .icon-md {
     font-size: 24px;
 }
@@ -94,6 +98,20 @@ nav a:hover small {
 
 /* /.Font-weights */
 
+
+/* Font Sizes */
+
+.text-sm {
+    font-size: 80% !important;
+}
+
+.text-xs {
+    font-size: 60% !important;
+}
+
+
+/* /.Font-Sizes */
+
 .cart-menu-list {
     width: 300px;
 }
@@ -113,5 +131,8 @@ nav a:hover small {
 @media(min-width: 1200px) {
     #search-form {
         width: 60%
+    }
+    .sub-nav-list>li:not(:first-child) {
+        margin-left: 1.5rem;
     }
 }
