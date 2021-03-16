@@ -9,9 +9,11 @@
     <!-- Favicon -->
     <link rel="shortcut icon" href="dist/images/app/kumba-logo.jpeg" type="image/x-icon">
     <!-- Bootstrap Core CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="dist/plugins/bootstrap-v5/css/bootstrap.min.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous"> -->
     <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="dist/plugins/bootstrap-icons-1.2.2/font/bootstrap-icons.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css"> -->
     <!-- Owl-Carousel -->
     <link rel="stylesheet" href="https://cdn.boomcdn.com/libs/owl-carousel/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdn.boomcdn.com/libs/owl-carousel/2.3.4/assets/owl.theme.default.min.css">
@@ -28,37 +30,37 @@
         <!-- Top Nav -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light my-0 py-0">
             <div class="container">
-                <ul class="list-inline w-100 m-0 p-0">
-                    <li class="list-inline-item">
-                        <div class="dropdown">
-                            <a href="#" data-bs-toggle="dropdown" aria-expanded="false">
-                                <small class="dropdown-toggle">Help</small>
-                            </a>
-                            <div class="dropdown-menu">
-                                <div class="dropdown-item">
-                                    <a href="#">Customer Service</a>
-                                </div>
-                                <div class="dropdown-item">
-                                    <a href="#">Disputes and Reports</a>
-                                </div>
+                <div class="d-flex align-items-center justify-content-between w-100">
+                    <div class="dropdown">
+                        <a href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                            <small class="dropdown-toggle">Help</small>
+                        </a>
+                        <div class="dropdown-menu shadow-sm my-0 py-0">
+                            <div class="dropdown-item">
+                                <a href="#" class="d-flex align-items-center">
+                                    <i class="bi bi-headset me-1"></i> Customer Service
+                                </a>
+                            </div>
+                            <div class="dropdown-item">
+                                <a href="#" class="d-flex align-items-center">
+                                    <i class="bi bi-person-lines-fill me-1"></i> Disputes and Reports
+                                </a>
                             </div>
                         </div>
-                    </li>
-                    <li class="list-inline-item ms-auto">
-                        <div class="d-flex align-items-center">
-                            <h6 class="text-capitalize text-sm font-300 my-0 me-1">
-                                PAY USING ECOCASH, VISA/MASTERCARD OR CASH ON DELIVERY
-                            </h6>
-                            <img src="dist/images/app/payment-icon.png" class="ms-1">
-                        </div>
-                    </li>
-                </ul>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <h6 class="text-capitalize text-sm font-300 my-0 me-1">
+                            Pay using ECOCASH, VISA/MASTERCARD OR CASH ON DELIVERY
+                        </h6>
+                        <img src="dist/images/app/payment-icon.png" class="ms-1">
+                    </div>
+                </div>
             </div>
         </nav>
         <!-- /.Top Nav -->
 
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-white my-0 py-0">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top my-0 py-0">
             <div class="container">
                 <a class="navbar-brand" href="#">
                     <img src="dist/images/app/kumba-logo.jpeg" alt="" width="135" height="76" class="d-inline-block align-top">
@@ -72,32 +74,51 @@
                             <input class="form-control me-2" type="search" placeholder="Search for products" name="search" id="search" aria-label="Search">
                             <i class="bi bi-search form-icon position-absolute"></i>
                         </div>
+                        <ul class="list-inline sub-list d-flex justify-content-between my-0 py-0">
+                            <li class="list-inline-item">
+                                <a href="index.html" class="nav-item">
+                                    <h6 class="text-sm font-300 my-0">Make-up</h6>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="category.html" class="nav-item">
+                                    <h6 class="text-sm font-300 my-0">Face wash</h6>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="category.html" class="nav-item">
+                                    <h6 class="text-sm font-300 my-0">Shampoo</h6>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="category.html" class="nav-item">
+                                    <h6 class="text-sm font-300 my-0">Combos</h6>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="category.html" class="nav-item">
+                                    <h6 class="text-sm font-300 my-0">Nutrition</h6>
+                                </a>
+                            </li>
+                        </ul>
                     </form>
-                    <ul class="list-inline ms-md-4 my-0 p-0">
+                    <ul class="list-inline nav-right-list my-0 p-0">
                         <li class="list-inline-item" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Wishlist">
-                            <a href="wishlist.html">
-                                <i class="bi bi-heart nav-icon"></i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item mx-4">
-                            <a href="sign-in.html">
-                                <div class="d-flex align-items-center">
-                                    <i class="bi bi-person icon-md me-1"></i>
-                                    <div class="d-block lh-100">
-                                        <small class="text-sm text-faded my-0 py-0">Hello, Sign in</small>
-                                        <h6 class="my-0 py-0">My Account</h6>
-                                    </div>
+                            <a href="wishlist.html" class="nav-item">
+                                <div class="d-block nav-circle d-grid position-relative">
+                                    <i class="bi bi-heart icon-md m-auto"></i>
+                                    <span class="badge bg-app-color text-white nav-badge rounded-pill text-white position-absolute">3</span>
                                 </div>
                             </a>
                         </li>
                         <li class="list-inline-item">
                             <div class="d-block dropdown">
-                                <a href="#" class="d-flex align-items-center" id="cart-menu" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <div class="d-block nav-circle position-relative">
-                                        <i class="bi bi-cart2 icon-md"></i>
-                                        <span class="badge bg-danger nav-badge rounded-pill position-absolute">3</span>
+                                <a href="#" class="nav-item d-flex align-items-center" id="cart-menu" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <div class="d-block nav-circle d-grid position-relative">
+                                        <i class="bi bi-cart2 icon-md m-auto"></i>
+                                        <span class="badge bg-app-color text-white nav-badge rounded-pill text-white position-absolute">3</span>
                                     </div>
-                                    <div class="d-block lh-100 ms-4">
+                                    <div class="d-block lh-125 ms-4">
                                         <small class="text-sm text-faded my-0 py-0">My Cart</small>
                                         <div class="d-flex align-items-center">
                                             <h6 class="dropdown-toggle my-0 py-0">$265.00</h6>
@@ -105,89 +126,178 @@
                                     </div>
                                 </a>
                                 <div class="dropdown-menu dropdown-menu-end shadow-sm cart-menu-list p-0" aria-labelledby="cart-menu">
-                                    <!-- Cart Item -->
-                                    <div class="dropdown-item">
-                                        <div class="d-flex divgn-items-center">
-                                            <img src="dist/images/products/15f460c7f56472.jpg" width="60" height="60" class="me-2">
-                                            <div class="d-block">
-                                                <h6 class="my-0 text-capitalize">women's color sneakers</h6>
-                                                <div class="d-flex align-items-center">
-                                                    <div class="d-flex align-items-center text-primary font-600">
-                                                        <span class="currency-symbol">$</span>
-                                                        <span class="unit-price">125</span>
-                                                        <sup class="cents">.99</sup>
-                                                    </div>
+                                    <div class="shopping-cart">
+                                        <!-- Cart Item -->
+                                        <div class="dropdown-item cart-item">
+                                            <div class="d-flex align-items-center">
+                                                <img src="dist/images/products/15f460c7f56472.jpg" width="60" height="60" class="me-2">
+                                                <div class="d-block">
+                                                    <h6 class="my-0 text-capitalize">women's color sneakers</h6>
                                                     <div class="d-flex align-items-center">
-                                                        <i class="bi bi-x mx-2"></i>
-                                                        <span>1</span>
+                                                        <div class="d-flex align-items-center text-app-color font-600">
+                                                            <span class="currency-symbol">$</span>
+                                                            <span class="unit-price">125</span>
+                                                            <sup class="cents">.99</sup>
+                                                        </div>
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="bi bi-x mx-2"></i>
+                                                            <span>1</span>
+                                                        </div>
+                                                        <button class="btn btn-outline-default btn-sm ms-auto mt-1" title="Remove from cart">
+                                                            <i class="bi bi-trash"></i>
+                                                        </button>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <!-- /.Cart Item -->
+                                        <!-- /.Cart Item -->
 
-                                    <!-- Cart Item -->
-                                    <div class="dropdown-item">
-                                        <div class="d-flex align-items-center">
-                                            <img src="dist/images/products/15f47370737dde.jpg" width="60" height="60" class="me-2">
-                                            <div class="d-block">
-                                                <h6 class="my-0 text-capitalize">women's color sneakers</h6>
-                                                <div class="d-flex align-items-center">
-                                                    <div class="d-flex align-items-center text-primary font-600">
-                                                        <span class="currency-symbol">$</span>
-                                                        <span class="unit-price">125</span>
-                                                        <sup class="cents">.99</sup>
-                                                    </div>
+                                        <!-- Cart Item -->
+                                        <div class="dropdown-item cart-item">
+                                            <div class="d-flex align-items-center">
+                                                <img src="dist/images/products/15f47370737dde.jpg" width="60" height="60" class="me-2">
+                                                <div class="d-block">
+                                                    <h6 class="my-0 text-capitalize">women's color sneakers</h6>
                                                     <div class="d-flex align-items-center">
-                                                        <i class="bi bi-x mx-2"></i>
-                                                        <span>1</span>
+                                                        <div class="d-flex align-items-center text-app-color font-600">
+                                                            <span class="currency-symbol">$</span>
+                                                            <span class="unit-price">125</span>
+                                                            <sup class="cents">.99</sup>
+                                                        </div>
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="bi bi-x mx-2"></i>
+                                                            <span>1</span>
+                                                        </div>
+                                                        <button class="btn btn-outline-default btn-sm ms-auto mt-1" title="Remove from cart">
+                                                            <i class="bi bi-trash"></i>
+                                                        </button>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <!-- /.Cart Item -->
+                                        <!-- /.Cart Item -->
 
-                                    <!-- Cart Item -->
-                                    <div class="dropdown-item">
-                                        <div class="d-flex align-items-center">
-                                            <img src="dist/images/products/15f473871f36bf.jpg" width="60" height="60" class="me-2">
-                                            <div class="d-block">
-                                                <h6 class="my-0 text-capitalize">women's color sneakers</h6>
-                                                <div class="d-flex align-items-center">
-                                                    <div class="d-flex align-items-center text-primary font-600">
-                                                        <span class="currency-symbol">$</span>
-                                                        <span class="unit-price">125</span>
-                                                        <sup class="cents">.99</sup>
-                                                    </div>
+                                        <!-- Cart Item -->
+                                        <div class="dropdown-item cart-item">
+                                            <div class="d-flex align-items-center">
+                                                <img src="dist/images/products/15f473871f36bf.jpg" width="60" height="60" class="me-2">
+                                                <div class="d-block">
+                                                    <h6 class="my-0 text-capitalize">women's color sneakers</h6>
                                                     <div class="d-flex align-items-center">
-                                                        <i class="bi bi-x mx-2"></i>
-                                                        <span>1</span>
+                                                        <div class="d-flex align-items-center text-app-color font-600">
+                                                            <span class="currency-symbol">$</span>
+                                                            <span class="unit-price">125</span>
+                                                            <sup class="cents">.99</sup>
+                                                        </div>
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="bi bi-x mx-2"></i>
+                                                            <span>1</span>
+                                                        </div>
+                                                        <button class="btn btn-outline-default btn-sm ms-auto mt-1" title="Remove from cart">
+                                                            <i class="bi bi-trash"></i>
+                                                        </button>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <!-- /.Cart Item -->
+                                        <!-- /.Cart Item -->
 
-                                    <div class="dropdown-item">
+                                        <!-- Cart Item -->
+                                        <div class="dropdown-item cart-item">
+                                            <div class="d-flex align-items-center">
+                                                <img src="dist/images/products/15f47d8a98a002.jpg" width="60" height="60" class="me-2">
+                                                <div class="d-block">
+                                                    <h6 class="my-0 text-capitalize">women's color sneakers</h6>
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="d-flex align-items-center text-app-color font-600">
+                                                            <span class="currency-symbol">$</span>
+                                                            <span class="unit-price">125</span>
+                                                            <sup class="cents">.99</sup>
+                                                        </div>
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="bi bi-x mx-2"></i>
+                                                            <span>1</span>
+                                                        </div>
+                                                        <button class="btn btn-outline-default btn-sm ms-auto mt-1" title="Remove from cart">
+                                                            <i class="bi bi-trash"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- /.Cart Item -->
+                                    </div>
+
+                                    <div class="d-block m-3">
                                         <div class="d-flex align-items-center justify-content-between my-1">
                                             <h6 class="my-0 d-flex align-items-center">
                                                 <span class="text-sm text-muted me-1">Subtotal:</span>
-                                                <div class="d-flex align-items-center text-primary font-600">
+                                                <div class="d-flex align-items-center text-app-color lead font-600">
                                                     <span class="currency-symbol">$</span>
                                                     <span class="unit-price">125</span>
                                                     <sup class="cents">.99</sup>
                                                 </div>
                                             </h6>
-                                            <button class="btn btn-outline-secondary d-flex align-items-center">
-                                                Expand cart <i class="bi bi-chevron-right"></i>
+                                            <button class="btn btn-outline-secondary btn-sm d-flex align-items-center mb-1">
+                                                Expand cart <i class="bi bi-chevron-right ms-1"></i>
                                             </button>
                                         </div>
-                                        <a href="checkout.html" class="btn btn-danger d-flex align-items-center justify-content-center font-600 my-2">
+                                        <a href="checkout.html" class="btn bg-app-color text-white d-flex align-items-center justify-content-center font-600 my-2">
                                             <i class="bi bi-credit-card me-1"></i> Checkout
                                         </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="nav-item" data-bs-toggle="modal" data-bs-target="#account-modal">
+                                <div class="d-flex align-items-center">
+                                    <i class="bi bi-people icon-md me-1"></i>
+                                    <div class="d-block lh-125">
+                                        <small class="text-sm text-faded my-0 py-0">Kumba</small>
+                                        <h6 class="my-0 py-0">Vendors</h6>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <div class="dropdown">
+                                <a href="#" id="account-menu" class="nav-item" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <div class="d-flex align-items-center">
+                                        <i class="bi bi-person icon-md me-1"></i>
+                                        <div class="d-block lh-125">
+                                            <small class="text-sm text-faded my-0 py-0">Hello, Sign in</small>
+                                            <h6 class="my-0 py-0">My Account</h6>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-end user-menu" aria-labelledby="account-menu">
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <img src="dist/images/greeting-icons/sunrise.svg" height="64" width="64" alt="" class="greeting-icon me-1">
+                                        <h6 class="text-app-color user-greeting my-0">Good morning!</h6>
+                                    </div>
+                                    <div class="container">
+                                        <h6 class="text-sm text-center">Sign in for the best shopping experience.</h6>
+                                        <a href="login.html" role="button" class="btn btn-block bg-app-color btn-sm text-white">
+                                            Sign in
+                                        </a>
+                                        <fieldset>
+                                            <legend class="text-center text-sm text-muted font-600 mb-0">OR</legend>
+                                            <div class="d-flex align-items-center justify-content-center">
+                                                <a href="#">
+                                                    <i class="bi bi-google text-app-color lead"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="bi bi-facebook text-app-color lead ms-3"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="bi bi-instagram text-app-color lead mx-3"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="bi bi-twitter text-app-color lead"></i>
+                                                </a>
+                                            </div>
+                                        </fieldset>
                                     </div>
                                 </div>
                             </div>
@@ -198,66 +308,1124 @@
         </nav>
         <!-- /.Navbar -->
 
-        <!-- Sub-nav -->
-        <nav class="navbar navbar-expand-lg navbar-light border-bottom bg-white my-0 py-2">
-            <div class="container">
-                <div class="d-flex align-items-center justify-content-lg-around">
-                    <div class="dropdown border-end pe-3">
-                        <a href="#" class="d-flex align-items-center">
-                            <i class="bi bi-grid me-1"></i>
-                            <div class="d-flex align-items-center">
-                                <h6 class="dropdown-toggle font-600 my-0">Departments</h6>
-                            </div>
-                        </a>
-                    </div>
-                    <ul class="list-inline ms-3 my-0 p-0 sub-nav-list">
-                        <li class="list-inline-item">
-                            <a href="index.html" class="nav-item active">
-                                <h6 class="font-600 my-0">Shop</h6>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="index.html" class="nav-item">
-                                <h6 class="font-600 my-0">Make-up</h6>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="category.html" class="nav-item">
-                                <h6 class="font-600 my-0">Face wash</h6>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="category.html" class="nav-item">
-                                <h6 class="font-600 my-0">Shampoo</h6>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="category.html" class="nav-item">
-                                <h6 class="font-600 my-0">Combos</h6>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="category.html" class="nav-item">
-                                <h6 class="font-600 my-0">Nutrition</h6>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+        <!-- Delivery Banner -->
+        <div class="delivery-banner my-0 w-100">
+            <div class="bg-app-color delivery-section text-white text-center py-2">
+                <h6 class="text-uppercase text-sm font-600 my-0">$3 delivery in harare</h6>
             </div>
-        </nav>
-        <!-- /.Sub-nav -->
+            <div class="bg-white"></div>
+            <div class="bg-app-color delivery-section text-white text-center py-2">
+                <h6 class="text-uppercase text-sm font-600 my-0">ROCKET DELIVERY – 90 MINUTE DELIVERY FOR ELIGIBLE ITEMS</h6>
+            </div>
+        </div>
+        <!-- /.Delivery Banner -->
+
+        <div class="page-content container mb-5">
+            <!-- Showcase Carousel -->
+            <a href="#">
+                <img src="dist/images/backgrounds/timthumb.png" alt="" class="img-fluid">
+            </a>
+            <!-- /.Showcase Carousel -->
+
+            <!-- Categories Section -->
+            <div class="categories-section my-2">
+                <!-- Category-card -->
+                <div class="category-card">
+                    <img src="dist/images/backgrounds/1612728525Lipstick 6.jpg" class="category-image">
+                    <button class="btn btn-outline-dark rounded-0 btn-lg">
+                        Face wash
+                    </button>
+                    <a href="#" class="stretched-link"></a>
+                </div>
+                <!-- /.Category-card -->
+
+                <!-- Category-card -->
+                <div class="category-card">
+                    <img src="dist/images/backgrounds/1615138986Fenty Glass Bomb.jpg" class="category-image">
+                    <button class="btn btn-outline-dark rounded-0 btn-lg">
+                        Make up
+                    </button>
+                    <a href="#" class="stretched-link"></a>
+                </div>
+                <!-- /.Category-card -->
+
+                <!-- Category-card -->
+                <div class="category-card">
+                    <img src="dist/images/backgrounds/1612729262Lipstick 2.jpg" class="category-image">
+                    <button class="btn btn-outline-dark rounded-0 btn-lg">
+                        Combos
+                    </button>
+                    <a href="#" class="stretched-link"></a>
+                </div>
+                <!-- /.Category-card -->
+
+                <!-- Category-card -->
+                <div class="category-card">
+                    <img src="dist/images/backgrounds/1612728560Lipstick 5.jpg" class="category-image">
+                    <button class="btn btn-outline-dark rounded-0 btn-lg">
+                        Shampoo
+                    </button>
+                    <a href="#" class="stretched-link"></a>
+                </div>
+                <!-- /.Category-card -->
+            </div>
+            <!-- /.Categories Section -->
+
+            <!-- Product Section -->
+            <section class="mt-3 mb-2">
+                <div class="d-flex align-items-center justify-content-between mt-2">
+                    <h5 class="lead-2x text-dark font-600 my-0">Trending products</h5>
+                    <a href="#" role="button" class="btn btn-sm btn-link text-undeline lead font-600 d-flex align-items-center">
+                        See all <i class="bi bi-chevron-right ms-1"></i>
+                    </a>
+                </div>
+                <div class="d-grid grid-4 gap-1">
+                    <!-- Product Card -->
+                    <div class="product-card position-relative">
+                        <span class="product-label badge bg-success text-white text-uppercase rounded-0">buy local</span>
+                        <span role="button" class="circled-button d-grid wishlist-btn position-absolute">
+                            <i class="bi bi-heart text-danger m-auto"></i>
+                        </span>
+                        <div class="product-img-wrapper">
+                            <img src="dist/images/products/lip-stick.jpg">
+                        </div>
+                        <div class="d-block">
+                            <h6 class="text-dark text-uppercase text-sm font-600 my-0">
+                                sosubysj lip tint i dont care
+                            </h6>
+                            <h6 class="text-faded text-sm text-capitalize font-300 my-0">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste, rerum?
+                            </h6>
+                            <!-- Product Pricing & Rating -->
+                            <div class="d-flex align-items-center justify-content-between mt-2">
+                                <div class="d-flex align-items-center">
+                                    <!-- Product Price -->
+                                    <div class="d-flex align-items-center product-price text-app-color font-500">
+                                        <span class="currency-symbol">$</span>
+                                        <span class="unit-price">125</span>
+                                        <sup class="cents">.99</sup>
+                                    </div>
+                                    <!-- /.Product Price -->
+
+                                    <!-- Previous Product Price -->
+                                    <div class="d-flex align-items-center strikethrough product-price text-muted font-500 ms-2">
+                                        <span class="currency-symbol">$</span>
+                                        <span class="unit-price">132</span>
+                                        <sup class="cents">.72</sup>
+                                    </div>
+                                    <!-- /.Previous Product Price -->
+                                </div>
+                                <img src="dist/images/app/rocket-delivery.png" width="80" height="21" alt="">
+                            </div>
+                            <!-- /.Product Pricing & Rating -->
+
+                            <!-- card-scroller -->
+                            <div class="card-scroller mt-2">
+                                <nav class="nav nav-underline" aria-label="Secondary navigation">
+                                    <!-- Product Color -->
+                                    <div class="product-color" aria-current="page">
+                                        <div class="color-background bg-danger"></div>
+                                    </div>
+                                    <!-- /.Product Color -->
+                                    <!-- Product Color -->
+                                    <div class="product-color">
+                                        <div class="color-background bg-success"></div>
+                                    </div>
+                                    <!-- /.Product Color -->
+
+                                    <!-- Product Color -->
+                                    <div class="product-color active">
+                                        <div class="color-background bg-aqua"></div>
+                                    </div>
+                                    <!-- /.Product Color -->
+
+                                    <!-- Product Color -->
+                                    <div class="product-color">
+                                        <div class="color-background bg-secondary"></div>
+                                    </div>
+                                    <!-- /.Product Color -->
+
+                                    <!-- Product Color -->
+                                    <div class="product-color">
+                                        <div class="color-background bg-warning"></div>
+                                    </div>
+                                    <!-- /.Product Color -->
+
+                                    <!-- Product Color -->
+                                    <div class="product-color">
+                                        <div class="color-background bg-info"></div>
+                                    </div>
+                                    <!-- /.Product Color -->
+                                </nav>
+                            </div>
+                            <!-- /.card-scroller -->
+
+                            <!-- Star Rating -->
+                            <div class="d-flex align-items-center popover-info">
+                                <ul class="list-inline product-star-rating align-items-center d-cursor my-0 p-0">
+                                    <li class="list-inline-item text-warning">&starf;</li>
+                                    <li class="list-inline-item text-warning">&starf;</li>
+                                    <li class="list-inline-item text-warning">&starf;</li>
+                                    <li class="list-inline-item text-warning">&starf;</li>
+                                    <li class="list-inline-item text-muted">&star;</li>
+                                </ul>
+                                <p class="text-sm text-muted ms-1 my-0 py-0">453 reviews</p>
+                            </div>
+                            <!-- /.Star Rating -->
+
+                            <button class="btn bg-app-color btn-block rounded-0 text-white d-flex align-items-center justify-content-center">
+                                <i class="bi bi-cart-plus me-1"></i> Add to cart
+                            </button>
+                            <a href="details.html" role="button" class="d-flex align-items-center justify-content-center text-faded text-sm mt-2">
+                                <i class="bi bi-eye me-1"></i> Quick view
+                            </a>
+                        </div>
+                    </div>
+                    <!-- /.Product Card -->
+
+                    <!-- Product Card -->
+                    <div class="product-card position-relative">
+                        <span class="product-label badge bg-success text-white text-uppercase rounded-0">buy local</span>
+                        <span role="button" class="circled-button d-grid wishlist-btn position-absolute">
+                            <i class="bi bi-heart text-danger m-auto"></i>
+                        </span>
+                        <div class="product-img-wrapper">
+                            <img src="dist/images/products/1615751532Whey protine.jpg">
+                        </div>
+                        <div class="d-block">
+                            <h6 class="text-dark text-uppercase text-sm font-600 my-0">
+                                sosubysj lip tint i dont care
+                            </h6>
+                            <h6 class="text-faded text-sm text-capitalize font-300 my-0">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste, rerum?
+                            </h6>
+                            <!-- Product Pricing & Rating -->
+                            <div class="d-flex align-items-center justify-content-between mt-2">
+                                <div class="d-flex align-items-center">
+                                    <!-- Product Price -->
+                                    <div class="d-flex align-items-center product-price text-app-color font-500">
+                                        <span class="currency-symbol">$</span>
+                                        <span class="unit-price">125</span>
+                                        <sup class="cents">.99</sup>
+                                    </div>
+                                    <!-- /.Product Price -->
+
+                                    <!-- Previous Product Price -->
+                                    <div class="d-flex align-items-center strikethrough product-price text-muted font-500 ms-2">
+                                        <span class="currency-symbol">$</span>
+                                        <span class="unit-price">132</span>
+                                        <sup class="cents">.72</sup>
+                                    </div>
+                                    <!-- /.Previous Product Price -->
+                                </div>
+                                <img src="dist/images/app/rocket-delivery.png" width="80" height="21" alt="">
+                            </div>
+                            <!-- /.Product Pricing & Rating -->
+
+                            <!-- Star Rating -->
+                            <div class="d-flex align-items-center popover-info">
+                                <ul class="list-inline product-star-rating align-items-center d-cursor my-0 p-0">
+                                    <li class="list-inline-item text-warning">&starf;</li>
+                                    <li class="list-inline-item text-warning">&starf;</li>
+                                    <li class="list-inline-item text-warning">&starf;</li>
+                                    <li class="list-inline-item text-warning">&starf;</li>
+                                    <li class="list-inline-item text-muted">&star;</li>
+                                </ul>
+                                <p class="text-sm text-muted ms-1 my-0 py-0">453 reviews</p>
+                            </div>
+                            <!-- /.Star Rating -->
+
+                            <button class="btn bg-app-color btn-block rounded-0 text-white d-flex align-items-center justify-content-center">
+                                <i class="bi bi-cart-plus me-1"></i> Add to cart
+                            </button>
+                            <a href="details.html" role="button" class="d-flex align-items-center justify-content-center text-faded text-sm mt-2">
+                                <i class="bi bi-eye me-1"></i> Quick view
+                            </a>
+                        </div>
+                    </div>
+                    <!-- /.Product Card -->
+
+                    <!-- Product Card -->
+                    <div class="product-card position-relative">
+                        <span class="product-label badge bg-success text-white text-uppercase rounded-0">buy local</span>
+                        <span role="button" class="circled-button d-grid wishlist-btn position-absolute">
+                            <i class="bi bi-heart text-danger m-auto"></i>
+                        </span>
+                        <div class="product-img-wrapper">
+                            <img src="dist/images/products/1612729262Lipstick 2.jpg">
+                        </div>
+                        <div class="d-block">
+                            <h6 class="text-dark text-uppercase text-sm font-600 my-0">
+                                sosubysj lip tint i dont care
+                            </h6>
+                            <h6 class="text-faded text-sm text-capitalize font-300 my-0">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste, rerum?
+                            </h6>
+                            <!-- Product Pricing & Rating -->
+                            <div class="d-flex align-items-center justify-content-between mt-2">
+                                <div class="d-flex align-items-center">
+                                    <!-- Product Price -->
+                                    <div class="d-flex align-items-center product-price text-app-color font-500">
+                                        <span class="currency-symbol">$</span>
+                                        <span class="unit-price">125</span>
+                                        <sup class="cents">.99</sup>
+                                    </div>
+                                    <!-- /.Product Price -->
+
+                                    <!-- Previous Product Price -->
+                                    <div class="d-flex align-items-center strikethrough product-price text-muted font-500 ms-2">
+                                        <span class="currency-symbol">$</span>
+                                        <span class="unit-price">132</span>
+                                        <sup class="cents">.72</sup>
+                                    </div>
+                                    <!-- /.Previous Product Price -->
+                                </div>
+                                <img src="dist/images/app/rocket-delivery.png" width="80" height="21" alt="">
+                            </div>
+                            <!-- /.Product Pricing & Rating -->
+
+                            <!-- card-scroller -->
+                            <div class="card-scroller mt-2">
+                                <nav class="nav nav-underline" aria-label="Secondary navigation">
+                                    <!-- Product Color -->
+                                    <div class="product-color" aria-current="page">
+                                        <div class="color-background bg-danger"></div>
+                                    </div>
+                                    <!-- /.Product Color -->
+                                    <!-- Product Color -->
+                                    <div class="product-color">
+                                        <div class="color-background bg-success"></div>
+                                    </div>
+                                    <!-- /.Product Color -->
+
+                                    <!-- Product Color -->
+                                    <div class="product-color active">
+                                        <div class="color-background bg-aqua"></div>
+                                    </div>
+                                    <!-- /.Product Color -->
+
+                                    <!-- Product Color -->
+                                    <div class="product-color">
+                                        <div class="color-background bg-secondary"></div>
+                                    </div>
+                                    <!-- /.Product Color -->
+
+                                    <!-- Product Color -->
+                                    <div class="product-color">
+                                        <div class="color-background bg-warning"></div>
+                                    </div>
+                                    <!-- /.Product Color -->
+
+                                    <!-- Product Color -->
+                                    <div class="product-color">
+                                        <div class="color-background bg-info"></div>
+                                    </div>
+                                    <!-- /.Product Color -->
+                                </nav>
+                            </div>
+                            <!-- /.card-scroller -->
+
+                            <!-- Star Rating -->
+                            <div class="d-flex align-items-center popover-info">
+                                <ul class="list-inline product-star-rating align-items-center d-cursor my-0 p-0">
+                                    <li class="list-inline-item text-warning">&starf;</li>
+                                    <li class="list-inline-item text-warning">&starf;</li>
+                                    <li class="list-inline-item text-warning">&starf;</li>
+                                    <li class="list-inline-item text-warning">&starf;</li>
+                                    <li class="list-inline-item text-muted">&star;</li>
+                                </ul>
+                                <p class="text-sm text-muted ms-1 my-0 py-0">453 reviews</p>
+                            </div>
+                            <!-- /.Star Rating -->
+
+                            <button class="btn bg-app-color btn-block rounded-0 text-white d-flex align-items-center justify-content-center">
+                                <i class="bi bi-cart-plus me-1"></i> Add to cart
+                            </button>
+                            <a href="details.html" role="button" class="d-flex align-items-center justify-content-center text-faded text-sm mt-2">
+                                <i class="bi bi-eye me-1"></i> Quick view
+                            </a>
+                        </div>
+                    </div>
+                    <!-- /.Product Card -->
+
+                    <!-- Product Card -->
+                    <div class="product-card position-relative">
+                        <span class="product-label badge bg-success text-white text-uppercase rounded-0">buy local</span>
+                        <span role="button" class="circled-button d-grid wishlist-btn position-absolute">
+                            <i class="bi bi-heart text-danger m-auto"></i>
+                        </span>
+                        <div class="product-img-wrapper">
+                            <img src="dist/images/products/timthumb.jpg">
+                        </div>
+                        <div class="d-block">
+                            <h6 class="text-dark text-uppercase text-sm font-600 my-0">
+                                sosubysj lip tint i dont care
+                            </h6>
+                            <h6 class="text-faded text-sm text-capitalize font-300 my-0">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste, rerum?
+                            </h6>
+                            <!-- Product Pricing & Rating -->
+                            <div class="d-flex align-items-center justify-content-between mt-2">
+                                <div class="d-flex align-items-center">
+                                    <!-- Product Price -->
+                                    <div class="d-flex align-items-center product-price text-app-color font-500">
+                                        <span class="currency-symbol">$</span>
+                                        <span class="unit-price">125</span>
+                                        <sup class="cents">.99</sup>
+                                    </div>
+                                    <!-- /.Product Price -->
+
+                                    <!-- Previous Product Price -->
+                                    <div class="d-flex align-items-center strikethrough product-price text-muted font-500 ms-2">
+                                        <span class="currency-symbol">$</span>
+                                        <span class="unit-price">132</span>
+                                        <sup class="cents">.72</sup>
+                                    </div>
+                                    <!-- /.Previous Product Price -->
+                                </div>
+                                <img src="dist/images/app/rocket-delivery.png" width="80" height="21" alt="">
+                            </div>
+                            <!-- /.Product Pricing & Rating -->
+
+                            <!-- card-scroller -->
+                            <div class="card-scroller mt-2">
+                                <nav class="nav nav-underline" aria-label="Secondary navigation">
+                                    <!-- Product Color -->
+                                    <div class="product-color" aria-current="page">
+                                        <div class="color-background bg-danger"></div>
+                                    </div>
+                                    <!-- /.Product Color -->
+                                    <!-- Product Color -->
+                                    <div class="product-color">
+                                        <div class="color-background bg-success"></div>
+                                    </div>
+                                    <!-- /.Product Color -->
+
+                                    <!-- Product Color -->
+                                    <div class="product-color active">
+                                        <div class="color-background bg-aqua"></div>
+                                    </div>
+                                    <!-- /.Product Color -->
+
+                                    <!-- Product Color -->
+                                    <div class="product-color">
+                                        <div class="color-background bg-secondary"></div>
+                                    </div>
+                                    <!-- /.Product Color -->
+
+                                    <!-- Product Color -->
+                                    <div class="product-color">
+                                        <div class="color-background bg-warning"></div>
+                                    </div>
+                                    <!-- /.Product Color -->
+
+                                    <!-- Product Color -->
+                                    <div class="product-color">
+                                        <div class="color-background bg-info"></div>
+                                    </div>
+                                    <!-- /.Product Color -->
+                                </nav>
+                            </div>
+                            <!-- /.card-scroller -->
+
+                            <!-- Star Rating -->
+                            <div class="d-flex align-items-center popover-info">
+                                <ul class="list-inline product-star-rating align-items-center d-cursor my-0 p-0">
+                                    <li class="list-inline-item text-warning">&starf;</li>
+                                    <li class="list-inline-item text-warning">&starf;</li>
+                                    <li class="list-inline-item text-warning">&starf;</li>
+                                    <li class="list-inline-item text-warning">&starf;</li>
+                                    <li class="list-inline-item text-muted">&star;</li>
+                                </ul>
+                                <p class="text-sm text-muted ms-1 my-0 py-0">453 reviews</p>
+                            </div>
+                            <!-- /.Star Rating -->
+
+                            <button class="btn bg-app-color btn-block rounded-0 text-white d-flex align-items-center justify-content-center">
+                                <i class="bi bi-cart-plus me-1"></i> Add to cart
+                            </button>
+                            <a href="details.html" role="button" class="d-flex align-items-center justify-content-center text-faded text-sm mt-2">
+                                <i class="bi bi-eye me-1"></i> Quick view
+                            </a>
+                        </div>
+                    </div>
+                    <!-- /.Product Card -->
+                </div>
+            </section>
+            <!-- /.Product Section -->
+
+            <!-- Featured Section -->
+            <section>
+                <h5 class="lead-2x text-dark font-600 mt-2">Featured by local product</h5>
+                <div class="d-grid grid-2">
+                    <a href="category.html">
+                        <img src="dist/images/backgrounds/16139560771.png" alt="" class="img-fluid">
+                    </a>
+                    <a href="category.html">
+                        <img src="dist/images/backgrounds/1613956545Fenty B E A U T Y (1).png" alt="" class="img-fluid">
+                    </a>
+                </div>
+            </section>
+            <!-- /.Featured Section -->
+
+            <!-- Product Section -->
+            <section class="mt-3 mb-2">
+                <div class="d-flex align-items-center justify-content-between mt-2">
+                    <h5 class="lead-2x text-dark font-600 my-0">New arrivals</h5>
+                    <a href="#" role="button" class="btn btn-sm btn-link text-undeline lead font-600 d-flex align-items-center">
+                        See all <i class="bi bi-chevron-right ms-1"></i>
+                    </a>
+                </div>
+                <div class="d-grid grid-4 gap-1">
+                    <!-- Product Card -->
+                    <div class="product-card position-relative">
+                        <span class="product-label badge bg-success text-white text-uppercase rounded-0">buy local</span>
+                        <span role="button" class="circled-button d-grid wishlist-btn position-absolute">
+                            <i class="bi bi-heart text-danger m-auto"></i>
+                        </span>
+                        <div class="product-img-wrapper">
+                            <img src="dist/images/products/lip-stick.jpg">
+                        </div>
+                        <div class="d-block">
+                            <h6 class="text-dark text-uppercase text-sm font-600 my-0">
+                                sosubysj lip tint i dont care
+                            </h6>
+                            <h6 class="text-faded text-sm text-capitalize font-300 my-0">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste, rerum?
+                            </h6>
+                            <!-- Product Pricing & Rating -->
+                            <div class="d-flex align-items-center justify-content-between mt-2">
+                                <div class="d-flex align-items-center">
+                                    <!-- Product Price -->
+                                    <div class="d-flex align-items-center product-price text-app-color font-500">
+                                        <span class="currency-symbol">$</span>
+                                        <span class="unit-price">125</span>
+                                        <sup class="cents">.99</sup>
+                                    </div>
+                                    <!-- /.Product Price -->
+
+                                    <!-- Previous Product Price -->
+                                    <div class="d-flex align-items-center strikethrough product-price text-muted font-500 ms-2">
+                                        <span class="currency-symbol">$</span>
+                                        <span class="unit-price">132</span>
+                                        <sup class="cents">.72</sup>
+                                    </div>
+                                    <!-- /.Previous Product Price -->
+                                </div>
+                                <img src="dist/images/app/rocket-delivery.png" width="80" height="21" alt="">
+                            </div>
+                            <!-- /.Product Pricing & Rating -->
+
+                            <!-- card-scroller -->
+                            <div class="card-scroller mt-2">
+                                <nav class="nav nav-underline" aria-label="Secondary navigation">
+                                    <!-- Product Color -->
+                                    <div class="product-color" aria-current="page">
+                                        <div class="color-background bg-danger"></div>
+                                    </div>
+                                    <!-- /.Product Color -->
+                                    <!-- Product Color -->
+                                    <div class="product-color">
+                                        <div class="color-background bg-success"></div>
+                                    </div>
+                                    <!-- /.Product Color -->
+
+                                    <!-- Product Color -->
+                                    <div class="product-color active">
+                                        <div class="color-background bg-aqua"></div>
+                                    </div>
+                                    <!-- /.Product Color -->
+
+                                    <!-- Product Color -->
+                                    <div class="product-color">
+                                        <div class="color-background bg-secondary"></div>
+                                    </div>
+                                    <!-- /.Product Color -->
+
+                                    <!-- Product Color -->
+                                    <div class="product-color">
+                                        <div class="color-background bg-warning"></div>
+                                    </div>
+                                    <!-- /.Product Color -->
+
+                                    <!-- Product Color -->
+                                    <div class="product-color">
+                                        <div class="color-background bg-info"></div>
+                                    </div>
+                                    <!-- /.Product Color -->
+                                </nav>
+                            </div>
+                            <!-- /.card-scroller -->
+
+                            <!-- Star Rating -->
+                            <div class="d-flex align-items-center popover-info">
+                                <ul class="list-inline product-star-rating align-items-center d-cursor my-0 p-0">
+                                    <li class="list-inline-item text-warning">&starf;</li>
+                                    <li class="list-inline-item text-warning">&starf;</li>
+                                    <li class="list-inline-item text-warning">&starf;</li>
+                                    <li class="list-inline-item text-warning">&starf;</li>
+                                    <li class="list-inline-item text-muted">&star;</li>
+                                </ul>
+                                <p class="text-sm text-muted ms-1 my-0 py-0">453 reviews</p>
+                            </div>
+                            <!-- /.Star Rating -->
+
+                            <button class="btn bg-app-color btn-block rounded-0 text-white d-flex align-items-center justify-content-center">
+                                <i class="bi bi-cart-plus me-1"></i> Add to cart
+                            </button>
+                            <a href="details.html" role="button" class="d-flex align-items-center justify-content-center text-faded text-sm mt-2">
+                                <i class="bi bi-eye me-1"></i> Quick view
+                            </a>
+                        </div>
+                    </div>
+                    <!-- /.Product Card -->
+
+                    <!-- Product Card -->
+                    <div class="product-card position-relative">
+                        <span class="product-label badge bg-success text-white text-uppercase rounded-0">buy local</span>
+                        <span role="button" class="circled-button d-grid wishlist-btn position-absolute">
+                            <i class="bi bi-heart text-danger m-auto"></i>
+                        </span>
+                        <div class="product-img-wrapper">
+                            <img src="dist/images/products/1615751532Whey protine.jpg">
+                        </div>
+                        <div class="d-block">
+                            <h6 class="text-dark text-uppercase text-sm font-600 my-0">
+                                sosubysj lip tint i dont care
+                            </h6>
+                            <h6 class="text-faded text-sm text-capitalize font-300 my-0">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste, rerum?
+                            </h6>
+                            <!-- Product Pricing & Rating -->
+                            <div class="d-flex align-items-center justify-content-between mt-2">
+                                <div class="d-flex align-items-center">
+                                    <!-- Product Price -->
+                                    <div class="d-flex align-items-center product-price text-app-color font-500">
+                                        <span class="currency-symbol">$</span>
+                                        <span class="unit-price">125</span>
+                                        <sup class="cents">.99</sup>
+                                    </div>
+                                    <!-- /.Product Price -->
+
+                                    <!-- Previous Product Price -->
+                                    <div class="d-flex align-items-center strikethrough product-price text-muted font-500 ms-2">
+                                        <span class="currency-symbol">$</span>
+                                        <span class="unit-price">132</span>
+                                        <sup class="cents">.72</sup>
+                                    </div>
+                                    <!-- /.Previous Product Price -->
+                                </div>
+                                <img src="dist/images/app/rocket-delivery.png" width="80" height="21" alt="">
+                            </div>
+                            <!-- /.Product Pricing & Rating -->
+
+                            <!-- Star Rating -->
+                            <div class="d-flex align-items-center popover-info">
+                                <ul class="list-inline product-star-rating align-items-center d-cursor my-0 p-0">
+                                    <li class="list-inline-item text-warning">&starf;</li>
+                                    <li class="list-inline-item text-warning">&starf;</li>
+                                    <li class="list-inline-item text-warning">&starf;</li>
+                                    <li class="list-inline-item text-warning">&starf;</li>
+                                    <li class="list-inline-item text-muted">&star;</li>
+                                </ul>
+                                <p class="text-sm text-muted ms-1 my-0 py-0">453 reviews</p>
+                            </div>
+                            <!-- /.Star Rating -->
+
+                            <button class="btn bg-app-color btn-block rounded-0 text-white d-flex align-items-center justify-content-center">
+                                <i class="bi bi-cart-plus me-1"></i> Add to cart
+                            </button>
+                            <a href="details.html" role="button" class="d-flex align-items-center justify-content-center text-faded text-sm mt-2">
+                                <i class="bi bi-eye me-1"></i> Quick view
+                            </a>
+                        </div>
+                    </div>
+                    <!-- /.Product Card -->
+
+                    <!-- Product Card -->
+                    <div class="product-card position-relative">
+                        <span class="product-label badge bg-success text-white text-uppercase rounded-0">buy local</span>
+                        <span role="button" class="circled-button d-grid wishlist-btn position-absolute">
+                            <i class="bi bi-heart text-danger m-auto"></i>
+                        </span>
+                        <div class="product-img-wrapper">
+                            <img src="dist/images/products/1612729262Lipstick 2.jpg">
+                        </div>
+                        <div class="d-block">
+                            <h6 class="text-dark text-uppercase text-sm font-600 my-0">
+                                sosubysj lip tint i dont care
+                            </h6>
+                            <h6 class="text-faded text-sm text-capitalize font-300 my-0">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste, rerum?
+                            </h6>
+                            <!-- Product Pricing & Rating -->
+                            <div class="d-flex align-items-center justify-content-between mt-2">
+                                <div class="d-flex align-items-center">
+                                    <!-- Product Price -->
+                                    <div class="d-flex align-items-center product-price text-app-color font-500">
+                                        <span class="currency-symbol">$</span>
+                                        <span class="unit-price">125</span>
+                                        <sup class="cents">.99</sup>
+                                    </div>
+                                    <!-- /.Product Price -->
+
+                                    <!-- Previous Product Price -->
+                                    <div class="d-flex align-items-center strikethrough product-price text-muted font-500 ms-2">
+                                        <span class="currency-symbol">$</span>
+                                        <span class="unit-price">132</span>
+                                        <sup class="cents">.72</sup>
+                                    </div>
+                                    <!-- /.Previous Product Price -->
+                                </div>
+                                <img src="dist/images/app/rocket-delivery.png" width="80" height="21" alt="">
+                            </div>
+                            <!-- /.Product Pricing & Rating -->
+
+                            <!-- card-scroller -->
+                            <div class="card-scroller mt-2">
+                                <nav class="nav nav-underline" aria-label="Secondary navigation">
+                                    <!-- Product Color -->
+                                    <div class="product-color" aria-current="page">
+                                        <div class="color-background bg-danger"></div>
+                                    </div>
+                                    <!-- /.Product Color -->
+                                    <!-- Product Color -->
+                                    <div class="product-color">
+                                        <div class="color-background bg-success"></div>
+                                    </div>
+                                    <!-- /.Product Color -->
+
+                                    <!-- Product Color -->
+                                    <div class="product-color active">
+                                        <div class="color-background bg-aqua"></div>
+                                    </div>
+                                    <!-- /.Product Color -->
+
+                                    <!-- Product Color -->
+                                    <div class="product-color">
+                                        <div class="color-background bg-secondary"></div>
+                                    </div>
+                                    <!-- /.Product Color -->
+
+                                    <!-- Product Color -->
+                                    <div class="product-color">
+                                        <div class="color-background bg-warning"></div>
+                                    </div>
+                                    <!-- /.Product Color -->
+
+                                    <!-- Product Color -->
+                                    <div class="product-color">
+                                        <div class="color-background bg-info"></div>
+                                    </div>
+                                    <!-- /.Product Color -->
+                                </nav>
+                            </div>
+                            <!-- /.card-scroller -->
+
+                            <!-- Star Rating -->
+                            <div class="d-flex align-items-center popover-info">
+                                <ul class="list-inline product-star-rating align-items-center d-cursor my-0 p-0">
+                                    <li class="list-inline-item text-warning">&starf;</li>
+                                    <li class="list-inline-item text-warning">&starf;</li>
+                                    <li class="list-inline-item text-warning">&starf;</li>
+                                    <li class="list-inline-item text-warning">&starf;</li>
+                                    <li class="list-inline-item text-muted">&star;</li>
+                                </ul>
+                                <p class="text-sm text-muted ms-1 my-0 py-0">453 reviews</p>
+                            </div>
+                            <!-- /.Star Rating -->
+
+                            <button class="btn bg-app-color btn-block rounded-0 text-white d-flex align-items-center justify-content-center">
+                                <i class="bi bi-cart-plus me-1"></i> Add to cart
+                            </button>
+                            <a href="details.html" role="button" class="d-flex align-items-center justify-content-center text-faded text-sm mt-2">
+                                <i class="bi bi-eye me-1"></i> Quick view
+                            </a>
+                        </div>
+                    </div>
+                    <!-- /.Product Card -->
+
+                    <!-- Product Card -->
+                    <div class="product-card position-relative">
+                        <span class="product-label badge bg-success text-white text-uppercase rounded-0">buy local</span>
+                        <span role="button" class="circled-button d-grid wishlist-btn position-absolute">
+                            <i class="bi bi-heart text-danger m-auto"></i>
+                        </span>
+                        <div class="product-img-wrapper">
+                            <img src="dist/images/products/timthumb.jpg">
+                        </div>
+                        <div class="d-block">
+                            <h6 class="text-dark text-uppercase text-sm font-600 my-0">
+                                sosubysj lip tint i dont care
+                            </h6>
+                            <h6 class="text-faded text-sm text-capitalize font-300 my-0">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste, rerum?
+                            </h6>
+                            <!-- Product Pricing & Rating -->
+                            <div class="d-flex align-items-center justify-content-between mt-2">
+                                <div class="d-flex align-items-center">
+                                    <!-- Product Price -->
+                                    <div class="d-flex align-items-center product-price text-app-color font-500">
+                                        <span class="currency-symbol">$</span>
+                                        <span class="unit-price">125</span>
+                                        <sup class="cents">.99</sup>
+                                    </div>
+                                    <!-- /.Product Price -->
+
+                                    <!-- Previous Product Price -->
+                                    <div class="d-flex align-items-center strikethrough product-price text-muted font-500 ms-2">
+                                        <span class="currency-symbol">$</span>
+                                        <span class="unit-price">132</span>
+                                        <sup class="cents">.72</sup>
+                                    </div>
+                                    <!-- /.Previous Product Price -->
+                                </div>
+                                <img src="dist/images/app/rocket-delivery.png" width="80" height="21" alt="">
+                            </div>
+                            <!-- /.Product Pricing & Rating -->
+
+                            <!-- card-scroller -->
+                            <div class="card-scroller mt-2">
+                                <nav class="nav nav-underline" aria-label="Secondary navigation">
+                                    <!-- Product Color -->
+                                    <div class="product-color" aria-current="page">
+                                        <div class="color-background bg-danger"></div>
+                                    </div>
+                                    <!-- /.Product Color -->
+                                    <!-- Product Color -->
+                                    <div class="product-color">
+                                        <div class="color-background bg-success"></div>
+                                    </div>
+                                    <!-- /.Product Color -->
+
+                                    <!-- Product Color -->
+                                    <div class="product-color active">
+                                        <div class="color-background bg-aqua"></div>
+                                    </div>
+                                    <!-- /.Product Color -->
+
+                                    <!-- Product Color -->
+                                    <div class="product-color">
+                                        <div class="color-background bg-secondary"></div>
+                                    </div>
+                                    <!-- /.Product Color -->
+
+                                    <!-- Product Color -->
+                                    <div class="product-color">
+                                        <div class="color-background bg-warning"></div>
+                                    </div>
+                                    <!-- /.Product Color -->
+
+                                    <!-- Product Color -->
+                                    <div class="product-color">
+                                        <div class="color-background bg-info"></div>
+                                    </div>
+                                    <!-- /.Product Color -->
+                                </nav>
+                            </div>
+                            <!-- /.card-scroller -->
+
+                            <!-- Star Rating -->
+                            <div class="d-flex align-items-center popover-info">
+                                <ul class="list-inline product-star-rating align-items-center d-cursor my-0 p-0">
+                                    <li class="list-inline-item text-warning">&starf;</li>
+                                    <li class="list-inline-item text-warning">&starf;</li>
+                                    <li class="list-inline-item text-warning">&starf;</li>
+                                    <li class="list-inline-item text-warning">&starf;</li>
+                                    <li class="list-inline-item text-muted">&star;</li>
+                                </ul>
+                                <p class="text-sm text-muted ms-1 my-0 py-0">453 reviews</p>
+                            </div>
+                            <!-- /.Star Rating -->
+
+                            <button class="btn bg-app-color btn-block rounded-0 text-white d-flex align-items-center justify-content-center">
+                                <i class="bi bi-cart-plus me-1"></i> Add to cart
+                            </button>
+                            <a href="details.html" role="button" class="d-flex align-items-center justify-content-center text-faded text-sm mt-2">
+                                <i class="bi bi-eye me-1"></i> Quick view
+                            </a>
+                        </div>
+                    </div>
+                    <!-- /.Product Card -->
+                </div>
+            </section>
+            <!-- /.Product Section -->
+        </div>
     </div>
 
+    <footer class="footer">
+        <!-- Social Media Section -->
+        <section>
+            <div class="d-grid grid-2 w-100">
+                <a href="#" class="bg-pale-pink d-grid py-4">
+                    <div class="d-block text-center m-auto">
+                        <i class="bi bi-pencil-square lead-2x text-primary mb-3"></i>
+                        <h6 class="lead text-dark font-600 my-0">Read the blog</h6>
+                        <p class="text-sm text-muted my-0 py-0">
+                            Latest store, fashion news and trends
+                        </p>
+                    </div>
+                </a>
+                <a href="#" class="bg-light d-grid py-4">
+                    <div class="d-block text-center m-auto">
+                        <i class="bi bi-instagram lead-2x text-danger mb-3"></i>
+                        <h6 class="lead text-dark font-600 my-0">Follow us on Instagram</h6>
+                        <p class="text-sm text-muted my-0 py-0">
+                            #kumba_the_neighbourhood_hero
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <img src="dist/images/backgrounds/kumbastore-insta.jpg" alt="" class="img-fluid">
+        </section>
+        <!-- /.Social Media Section -->
+
+        <!-- Site Map -->
+        <section class="bg-gray-dark">
+            <div class="container pt-3">
+                <div class="row g-3">
+                    <div class="col-12 col-md-4">
+                        <h6 class="lead text-white font-600 my-0">Shop departments</h6>
+                        <ul class="footer-list m-0 p-0">
+                            <li>
+                                <a href="#">Combos</a>
+                            </li>
+                            <li>
+                                <a href="#">Face wash</a>
+                            </li>
+                            <li>
+                                <a href="#">Make-up</a>
+                            </li>
+                            <li>
+                                <a href="#">Nutrition</a>
+                            </li>
+                            <li>
+                                <a href="#">Shampoo</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="d-block mb-2">
+                            <h6 class="lead text-white font-600 my-0">Account & delivery info</h6>
+                            <ul class="footer-list m-0 p-0">
+                                <li>
+                                    <a href="#">Your account</a>
+                                </li>
+                                <li>
+                                    <a href="#">Delivery rates & policies</a>
+                                </li>
+                                <li>
+                                    <a href="#">Refunds & replacements</a>
+                                </li>
+                                <li>
+                                    <a href="#">Order tracking</a>
+                                </li>
+                                <li>
+                                    <a href="#">Delivery info</a>
+                                </li>
+                                <li>
+                                    <a href="#">Taxes & fees</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="d-block">
+                            <h6 class="lead text-white font-600 my-0">About us</h6>
+                            <ul class="footer-list m-0 p-0">
+                                <li>
+                                    <a href="#">About company</a>
+                                </li>
+                                <li>
+                                    <a href="#">Our team</a>
+                                </li>
+                                <li>
+                                    <a href="#">Careers</a>
+                                </li>
+                                <li>
+                                    <a href="#">News</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <h6 class="lead text-white font-600 my-0">Stay informed</h6>
+                        <form action="" method="post" class="needs-validation position-relative" id="mailing-list-form" novalidate>
+                            <i class="bi bi-envelope position-absolute input-group-icon"></i>
+                            <div class="input-group mt-3">
+                                <input type="text" class="form-control ps-4" placeholder="Your email" aria-label="Your email" aria-describedby="subscribe-button">
+                                <span class="input-group-text bg-danger text-white font-600" id="subscribe-button">Subscribe</span>
+                            </div>
+                        </form>
+                        <p class="text-light text-sm font-600 lh-5 my-0 py-0">
+                            *Subscribe tou our newsletter to receive early discount offers, updates and new products info.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /.Site Map -->
+
+        <!-- Our Services -->
+        <section class="bg-darker py-4">
+            <div class="container">
+                <div class="row g-3">
+                    <div class="col-12 col-md-3">
+                        <div class="d-flex align-items-center">
+                            <i class="bi bi-truck lead-2x text-danger me-3"></i>
+                            <div class="block lh-100">
+                                <h6 class="text-light font-600">Fast and free delivery</h6>
+                                <h6 class="text-faded text-sm font-600 my-0">Free delivery for orders over $200</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <div class="d-flex align-items-center">
+                            <i class="bi bi-cash-stack lead-2x text-danger me-3"></i>
+                            <div class="block lh-100">
+                                <h6 class="text-light font-600">Money back guarantee</h6>
+                                <h6 class="text-faded text-sm font-600 my-0">We return money within 30 days</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <div class="d-flex align-items-center">
+                            <i class="bi bi-headset lead-2x text-danger me-3"></i>
+                            <div class="block lh-100">
+                                <h6 class="text-light font-600">24/7 customer support</h6>
+                                <h6 class="text-faded text-sm font-600 my-0">Friendly 24/7 customer support</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <div class="d-flex align-items-center">
+                            <i class="bi bi-credit-card lead-2x text-danger me-3"></i>
+                            <div class="block lh-100">
+                                <h6 class="text-light font-600">Secure online payments</h6>
+                                <h6 class="text-faded text-sm font-600 my-0">We possess an SSL / Seccure certificate</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /.Our Services -->
+
+        <!-- Copyrights -->
+        <section class="bg-darker border-top border-secondary py-4">
+            <div class="container">
+                <div class="d-flex align-items-center">
+                    <img src="dist/images/app/Logo.png" alt="" class="img-fluid">
+                    <div class="dropdown">
+                        <button class="btn btn-outline-light btn-lg d-flex align-items-center justify-content-center text-sm font-600" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="dist/images/currencies/usd.png" width="27" height="14" alt="" class="me-2">
+                            <span class="dropdown-toggle">Eng / $</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /.Copyrights -->
+    </footer>
+
+    <!-- Account Forms Modal -->
+    <div class="modal fade" id="account-modal" tabindex="-1" aria-labelledby="account-modalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header m-0 p-0">
+                    <nav class="modal-title">
+                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                            <button class="nav-link active" id="nav-login-tab" data-bs-toggle="tab" data-bs-target="#nav-login" type="button" role="tab" aria-controls="nav-login" aria-selected="true">
+                                <div class="d-flex align-items-center font-600">
+                                    <i class="bi bi-unlock nav-icon me-1"></i> Sign in
+                                </div>
+                            </button>
+                            <button class="nav-link" id="nav-register-tab" data-bs-toggle="tab" data-bs-target="#nav-register" type="button" role="tab" aria-controls="nav-register" aria-selected="false">
+                                <div class="d-flex align-items-center font-600">
+                                    <i class="bi bi-person nav-icon me-1"></i> Sign up
+                                </div>
+                            </button>
+                        </div>
+                    </nav>
+                    <button type="button" class="btn-close me-3" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-login" role="tabpanel" aria-labelledby="nav-login-tab">
+                            <form action="" method="post" class="row g-3 needs-validation" id="login-form" novalidate>
+                                <div class="col-12">
+                                    <label for="fullname" class="form-label font-600 mb-0">Fullname or email address</label>
+                                    <input type="text" class="form-control" id="fullname" name="fullname" autofocus required>
+                                    <div class="invalid-feedback">
+                                        Please enter your fullname or email address.
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <label for="password" class="form-label font-600 mb-0">Password</label>
+                                    <input type="password" class="form-control" id="password" name="password" required>
+                                    <div class="invalid-feedback">
+                                        Please enter your password.
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-primary btn-block font-600" type="submit">Sign in</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="tab-pane fade" id="nav-register" role="tabpanel" aria-labelledby="nav-register-tab">
+                            <form action="" method="post" class="row g-3 needs-validation" id="register-form" novalidate>
+                                <div class="col-12">
+                                    <label for="fullname" class="form-label font-600 mb-0">Full name</label>
+                                    <input type="text" class="form-control" id="fullname" name="fullname" autofocus required>
+                                    <div class="invalid-feedback">
+                                        Please enter your fullname.
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <label for="email" class="form-label font-600 mb-0">Email</label>
+                                    <input type="email" class="form-control" id="email" name="email" required>
+                                    <div class="invalid-feedback">
+                                        Please enter your email address.
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <label for="password" class="form-label font-600 mb-0">Password</label>
+                                    <input type="password" class="form-control" id="password" name="password" required>
+                                    <div class="invalid-feedback">
+                                        Please enter your password.
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <label for="confirm-password" class="form-label font-600 mb-0">Confirm password</label>
+                                    <input type="password" class="form-control" id="password" name="password" required>
+                                    <div class="invalid-feedback">
+                                        Please enter your password confirmation.
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-primary btn-block font-600" type="submit">Sign up</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.Account Forms Modal -->
+
     <!-- JQuery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="dist/plugins/jquery/jquery.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> -->
     <!-- Bootstrap JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script src="dist/plugins/bootstrap-v5/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script> -->
     <!-- Owl-Carousel -->
     <script src="https://cdn.boomcdn.com/libs/owl-carousel/2.3.4/owl.carousel.min.js"></script>
     <!-- IziToast -->
     <script src="dist/plugins/iziToast/js/iziToast.min.js"></script>
     <!-- SweetAlert2 -->
     <script src="dist/plugins/sweetalert2/package/dist/sweetalert2.min.js"></script>
+    <!-- App Core JS -->
+    <script src="dist/js/kumba.min.js"></script>
 </body>
 
 </html>
