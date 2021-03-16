@@ -49,7 +49,7 @@
                         </div>
                     </div>
                     <div class="d-flex align-items-center">
-                        <h6 class="text-capitalize text-sm font-300 my-0 me-1">
+                        <h6 class="text-capitalize text-sm font-300 d-none d-lg-block my-0 me-1">
                             Pay using ECOCASH, VISA/MASTERCARD OR CASH ON DELIVERY
                         </h6>
                         <img src="dist/images/app/payment-icon.png" class="ms-1">
@@ -60,21 +60,21 @@
         <!-- /.Top Nav -->
 
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top d-none d-md-block my-0 py-0">
+        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm sticky-top d-none d-md-block my-0 py-0">
             <div class="container">
-                <a class="navbar-brand" href="index.html">
+                <a class="navbar-brand py-0 my-0" href="index.html">
                     <img src="dist/images/app/kumba-logo.jpeg" alt="" width="135" height="76" class="d-inline-block align-top">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="collapse navbar-collapse w-100" id="navbarSupportedContent">
                     <form method="get" class="needs-validation" id="search-form" novalidate>
                         <div class="form-control-iconed position-relative" id="search-bar">
-                            <input class="form-control me-2" type="search" placeholder="Search for products" name="search" id="search" aria-label="Search">
+                            <input type="search" class="form-control me-2" name="search" id="search" aria-label="Search">
                             <i class="bi bi-search form-icon position-absolute"></i>
                         </div>
-                        <ul class="list-inline sub-list d-flex justify-content-between my-0 py-0">
+                        <ul class="list-inline sub-list d-none d-lg-flex justify-content-between my-0 py-0">
                             <li class="list-inline-item">
                                 <a href="index.html" class="nav-item">
                                     <h6 class="text-sm font-300 my-0">Make-up</h6>
@@ -102,7 +102,7 @@
                             </li>
                         </ul>
                     </form>
-                    <ul class="list-inline nav-right-list my-0 p-0">
+                    <ul class="list-inline nav-right-list ms-auto my-0 p-0">
                         <li class="list-inline-item" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Wishlist">
                             <a href="wishlist.html" class="nav-item">
                                 <div class="d-block nav-circle d-grid position-relative">
@@ -384,38 +384,67 @@
             </div>
         </nav>
         <nav class="navbar bg-white shadow-sm sticky-top d-md-none my-0 py-0">
-            <div class="d-flex align-items-center">
-                <a class="navbar-brand" href="index.html">
-                    <img src="dist/images/app/kumba-logo.jpeg" alt="" width="72" height="41" class="d-inline-block align-top">
-                </a>
-                <ul class="list-inline ms-auto my-0 p-0">
-                    <li class="list-inline-item" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Wishlist">
-                        <a href="wishlist.html" class="nav-item">
-                            <div class="d-block nav-circle d-grid position-relative">
-                                <i class="bi bi-heart icon-md m-auto"></i>
-                                <span class="badge bg-app-color text-white nav-badge rounded-pill text-white position-absolute">3</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="#" class="nav-item d-flex align-items-center">
-                            <div class="d-block nav-circle d-grid position-relative">
-                                <i class="bi bi-cart2 icon-md m-auto"></i>
-                                <span class="badge bg-app-color text-white nav-badge rounded-pill text-white position-absolute">3</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="#" class="nav-item d-flex align-items-center">
-                            <div class="d-block nav-circle d-grid position-relative">
-                                <img src="" class="rounded-circle">
-                            </div>
-                        </a>
-                    </li>
-                </ul>
+            <div class="container-fluid">
+                <div class="d-flex align-items-center w-100">
+                    <a class="navbar-brand py-0 my-0" href="index.html">
+                        <img src="dist/images/app/kumba-logo.jpeg" alt="" width="72" height="41" class="d-inline-block align-top">
+                    </a>
+                    <ul class="list-inline ms-auto my-0 py-0">
+                        <li class="list-inline-item">
+                            <button type="button" class="btn btn-light circled-button">
+                                <i class="bi bi-search"></i>
+                            </button>
+                        </li>
+                        <li class="list-inline-item mx-3">
+                            <a href="#" role="button" class="btn btn-light circled-button">
+                                <i class="bi bi-people"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <button type="button" class="btn btn-light circled-button">
+                                <i class="bi bi-list"></i>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
         <!-- /.Mobile Top Navbars -->
+
+        <!-- Mobile Fixed-Bottom Nav -->
+        <nav class="navbar bg-white shadow-sm fixed-bottom d-md-none my-0 py-1">
+            <div class="container-fluid">
+                <div class="d-flex align-items-center justify-content-between w-100">
+                    <a href="index.html" class="d-block text-center">
+                        <span class="bg-light circled-button">
+                            <i class="bi bi-shop"></i>
+                        </span>
+                        <p class="text-xs text-center my-0 py-0">Shop</p>
+                    </a>
+                    <a href="categories.html" class="d-block text-center">
+                        <span class="bg-light circled-button">
+                            <i class="bi bi-card-list"></i>
+                        </span>
+                        <p class="text-xs text-center my-0 py-0">Categories</p>
+                    </a>
+                    <a href="cart.html" class="d-block text-center position-relative">
+                        <span class="badge nav-badge bg-app-color text-white rounded-pill position-absolute">12</span>
+                        <span class="bg-light circled-button">
+                            <i class="bi bi-heart"></i>
+                        </span>
+                        <p class="text-xs  my-0 py-0">Wishlist</p>
+                    </a>
+                    <a href="cart.html" class="d-block text-center position-relative">
+                        <span class="badge nav-badge bg-app-color text-white rounded-pill position-absolute">12</span>
+                        <span class="bg-light circled-button">
+                            <i class="bi bi-cart4"></i>
+                        </span>
+                        <p class="text-xs  my-0 py-0">$265.00</p>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <!-- /.Mobile Fixed-Bottom Nav -->
 
         <div class="page-content container mb-5">
             <!-- Delivery Banner -->
@@ -423,7 +452,7 @@
                 <div class="bg-app-color delivery-section text-white text-center py-2">
                     <h6 class="text-uppercase text-sm font-600 my-0">$3 delivery in harare</h6>
                 </div>
-                <div class="bg-white"></div>
+                <div class="bg-white d-none d-lg-block"></div>
                 <div class="bg-app-color delivery-section text-white text-center py-2">
                     <h6 class="text-uppercase text-sm font-600 my-0">ROCKET DELIVERY – 90 MINUTE DELIVERY FOR ELIGIBLE ITEMS</h6>
                 </div>
@@ -484,11 +513,11 @@
             <section class="mt-3 mb-2">
                 <div class="d-flex align-items-center justify-content-between mt-2">
                     <h5 class="lead-2x text-dark font-600 my-0">Trending products</h5>
-                    <a href="#" role="button" class="btn btn-sm btn-link text-undeline lead font-600 d-flex align-items-center">
+                    <a href="#" role="button" class="btn btn-sm btn-outline-dark lead font-600 d-flex align-items-center">
                         See all <i class="bi bi-chevron-right ms-1"></i>
                     </a>
                 </div>
-                <div class="d-grid grid-4 gap-1">
+                <div class="d-grid grid-4 product-section mt-3 gap-1">
                     <!-- Product Card -->
                     <div class="product-card position-relative">
                         <span class="product-label badge bg-success text-white text-uppercase rounded-0">buy local</span>
@@ -569,25 +598,27 @@
                             </div>
                             <!-- /.card-scroller -->
 
-                            <!-- Star Rating -->
-                            <div class="d-flex align-items-center popover-info">
-                                <ul class="list-inline product-star-rating align-items-center d-cursor my-0 p-0">
-                                    <li class="list-inline-item text-warning">&starf;</li>
-                                    <li class="list-inline-item text-warning">&starf;</li>
-                                    <li class="list-inline-item text-warning">&starf;</li>
-                                    <li class="list-inline-item text-warning">&starf;</li>
-                                    <li class="list-inline-item text-muted">&star;</li>
-                                </ul>
-                                <p class="text-sm text-muted ms-1 my-0 py-0">453 reviews</p>
-                            </div>
-                            <!-- /.Star Rating -->
+                            <div class="d-block card-actions">
+                                <!-- Star Rating -->
+                                <div class="d-flex align-items-center popover-info">
+                                    <ul class="list-inline product-star-rating align-items-center d-cursor my-0 p-0">
+                                        <li class="list-inline-item text-warning">&starf;</li>
+                                        <li class="list-inline-item text-warning">&starf;</li>
+                                        <li class="list-inline-item text-warning">&starf;</li>
+                                        <li class="list-inline-item text-warning">&starf;</li>
+                                        <li class="list-inline-item text-muted">&star;</li>
+                                    </ul>
+                                    <p class="text-sm text-muted ms-1 my-0 py-0">453 reviews</p>
+                                </div>
+                                <!-- /.Star Rating -->
 
-                            <button class="btn bg-app-color btn-block rounded-0 text-white d-flex align-items-center justify-content-center">
-                                <i class="bi bi-cart-plus me-1"></i> Add to cart
-                            </button>
-                            <a href="details.html" role="button" class="d-flex align-items-center justify-content-center text-faded text-sm mt-2">
-                                <i class="bi bi-eye me-1"></i> Quick view
-                            </a>
+                                <button class="btn bg-app-color btn-block rounded-0 text-white d-flex align-items-center justify-content-center">
+                                    <i class="bi bi-cart-plus me-1"></i> Add to cart
+                                </button>
+                                <a href="details.html" role="button" class="d-flex align-items-center justify-content-center text-faded text-sm mt-2">
+                                    <i class="bi bi-eye me-1"></i> Quick view
+                                </a>
+                            </div>
                         </div>
                     </div>
                     <!-- /.Product Card -->
@@ -631,25 +662,27 @@
                             </div>
                             <!-- /.Product Pricing & Rating -->
 
-                            <!-- Star Rating -->
-                            <div class="d-flex align-items-center popover-info">
-                                <ul class="list-inline product-star-rating align-items-center d-cursor my-0 p-0">
-                                    <li class="list-inline-item text-warning">&starf;</li>
-                                    <li class="list-inline-item text-warning">&starf;</li>
-                                    <li class="list-inline-item text-warning">&starf;</li>
-                                    <li class="list-inline-item text-warning">&starf;</li>
-                                    <li class="list-inline-item text-muted">&star;</li>
-                                </ul>
-                                <p class="text-sm text-muted ms-1 my-0 py-0">453 reviews</p>
-                            </div>
-                            <!-- /.Star Rating -->
+                            <div class="d-block card-actions">
+                                <!-- Star Rating -->
+                                <div class="d-flex align-items-center popover-info">
+                                    <ul class="list-inline product-star-rating align-items-center d-cursor my-0 p-0">
+                                        <li class="list-inline-item text-warning">&starf;</li>
+                                        <li class="list-inline-item text-warning">&starf;</li>
+                                        <li class="list-inline-item text-warning">&starf;</li>
+                                        <li class="list-inline-item text-warning">&starf;</li>
+                                        <li class="list-inline-item text-muted">&star;</li>
+                                    </ul>
+                                    <p class="text-sm text-muted ms-1 my-0 py-0">453 reviews</p>
+                                </div>
+                                <!-- /.Star Rating -->
 
-                            <button class="btn bg-app-color btn-block rounded-0 text-white d-flex align-items-center justify-content-center">
-                                <i class="bi bi-cart-plus me-1"></i> Add to cart
-                            </button>
-                            <a href="details.html" role="button" class="d-flex align-items-center justify-content-center text-faded text-sm mt-2">
-                                <i class="bi bi-eye me-1"></i> Quick view
-                            </a>
+                                <button class="btn bg-app-color btn-block rounded-0 text-white d-flex align-items-center justify-content-center">
+                                    <i class="bi bi-cart-plus me-1"></i> Add to cart
+                                </button>
+                                <a href="details.html" role="button" class="d-flex align-items-center justify-content-center text-faded text-sm mt-2">
+                                    <i class="bi bi-eye me-1"></i> Quick view
+                                </a>
+                            </div>
                         </div>
                     </div>
                     <!-- /.Product Card -->
@@ -734,25 +767,27 @@
                             </div>
                             <!-- /.card-scroller -->
 
-                            <!-- Star Rating -->
-                            <div class="d-flex align-items-center popover-info">
-                                <ul class="list-inline product-star-rating align-items-center d-cursor my-0 p-0">
-                                    <li class="list-inline-item text-warning">&starf;</li>
-                                    <li class="list-inline-item text-warning">&starf;</li>
-                                    <li class="list-inline-item text-warning">&starf;</li>
-                                    <li class="list-inline-item text-warning">&starf;</li>
-                                    <li class="list-inline-item text-muted">&star;</li>
-                                </ul>
-                                <p class="text-sm text-muted ms-1 my-0 py-0">453 reviews</p>
-                            </div>
-                            <!-- /.Star Rating -->
+                            <div class="d-block card-actions">
+                                <!-- Star Rating -->
+                                <div class="d-flex align-items-center popover-info">
+                                    <ul class="list-inline product-star-rating align-items-center d-cursor my-0 p-0">
+                                        <li class="list-inline-item text-warning">&starf;</li>
+                                        <li class="list-inline-item text-warning">&starf;</li>
+                                        <li class="list-inline-item text-warning">&starf;</li>
+                                        <li class="list-inline-item text-warning">&starf;</li>
+                                        <li class="list-inline-item text-muted">&star;</li>
+                                    </ul>
+                                    <p class="text-sm text-muted ms-1 my-0 py-0">453 reviews</p>
+                                </div>
+                                <!-- /.Star Rating -->
 
-                            <button class="btn bg-app-color btn-block rounded-0 text-white d-flex align-items-center justify-content-center">
-                                <i class="bi bi-cart-plus me-1"></i> Add to cart
-                            </button>
-                            <a href="details.html" role="button" class="d-flex align-items-center justify-content-center text-faded text-sm mt-2">
-                                <i class="bi bi-eye me-1"></i> Quick view
-                            </a>
+                                <button class="btn bg-app-color btn-block rounded-0 text-white d-flex align-items-center justify-content-center">
+                                    <i class="bi bi-cart-plus me-1"></i> Add to cart
+                                </button>
+                                <a href="details.html" role="button" class="d-flex align-items-center justify-content-center text-faded text-sm mt-2">
+                                    <i class="bi bi-eye me-1"></i> Quick view
+                                </a>
+                            </div>
                         </div>
                     </div>
                     <!-- /.Product Card -->
@@ -837,25 +872,27 @@
                             </div>
                             <!-- /.card-scroller -->
 
-                            <!-- Star Rating -->
-                            <div class="d-flex align-items-center popover-info">
-                                <ul class="list-inline product-star-rating align-items-center d-cursor my-0 p-0">
-                                    <li class="list-inline-item text-warning">&starf;</li>
-                                    <li class="list-inline-item text-warning">&starf;</li>
-                                    <li class="list-inline-item text-warning">&starf;</li>
-                                    <li class="list-inline-item text-warning">&starf;</li>
-                                    <li class="list-inline-item text-muted">&star;</li>
-                                </ul>
-                                <p class="text-sm text-muted ms-1 my-0 py-0">453 reviews</p>
-                            </div>
-                            <!-- /.Star Rating -->
+                            <div class="d-block card-actions">
+                                <!-- Star Rating -->
+                                <div class="d-flex align-items-center popover-info">
+                                    <ul class="list-inline product-star-rating align-items-center d-cursor my-0 p-0">
+                                        <li class="list-inline-item text-warning">&starf;</li>
+                                        <li class="list-inline-item text-warning">&starf;</li>
+                                        <li class="list-inline-item text-warning">&starf;</li>
+                                        <li class="list-inline-item text-warning">&starf;</li>
+                                        <li class="list-inline-item text-muted">&star;</li>
+                                    </ul>
+                                    <p class="text-sm text-muted ms-1 my-0 py-0">453 reviews</p>
+                                </div>
+                                <!-- /.Star Rating -->
 
-                            <button class="btn bg-app-color btn-block rounded-0 text-white d-flex align-items-center justify-content-center">
-                                <i class="bi bi-cart-plus me-1"></i> Add to cart
-                            </button>
-                            <a href="details.html" role="button" class="d-flex align-items-center justify-content-center text-faded text-sm mt-2">
-                                <i class="bi bi-eye me-1"></i> Quick view
-                            </a>
+                                <button class="btn bg-app-color btn-block rounded-0 text-white d-flex align-items-center justify-content-center">
+                                    <i class="bi bi-cart-plus me-1"></i> Add to cart
+                                </button>
+                                <a href="details.html" role="button" class="d-flex align-items-center justify-content-center text-faded text-sm mt-2">
+                                    <i class="bi bi-eye me-1"></i> Quick view
+                                </a>
+                            </div>
                         </div>
                     </div>
                     <!-- /.Product Card -->
@@ -881,11 +918,11 @@
             <section class="mt-3 mb-2">
                 <div class="d-flex align-items-center justify-content-between mt-2">
                     <h5 class="lead-2x text-dark font-600 my-0">New arrivals</h5>
-                    <a href="#" role="button" class="btn btn-sm btn-link text-undeline lead font-600 d-flex align-items-center">
+                    <a href="#" role="button" class="btn btn-sm btn-outline-dark lead font-600 d-flex align-items-center">
                         See all <i class="bi bi-chevron-right ms-1"></i>
                     </a>
                 </div>
-                <div class="d-grid grid-4 gap-1">
+                <div class="d-grid grid-4 product-section mt-3 gap-1">
                     <!-- Product Card -->
                     <div class="product-card position-relative">
                         <span class="product-label badge bg-success text-white text-uppercase rounded-0">buy local</span>
@@ -966,25 +1003,27 @@
                             </div>
                             <!-- /.card-scroller -->
 
-                            <!-- Star Rating -->
-                            <div class="d-flex align-items-center popover-info">
-                                <ul class="list-inline product-star-rating align-items-center d-cursor my-0 p-0">
-                                    <li class="list-inline-item text-warning">&starf;</li>
-                                    <li class="list-inline-item text-warning">&starf;</li>
-                                    <li class="list-inline-item text-warning">&starf;</li>
-                                    <li class="list-inline-item text-warning">&starf;</li>
-                                    <li class="list-inline-item text-muted">&star;</li>
-                                </ul>
-                                <p class="text-sm text-muted ms-1 my-0 py-0">453 reviews</p>
-                            </div>
-                            <!-- /.Star Rating -->
+                            <div class="d-block card-actions">
+                                <!-- Star Rating -->
+                                <div class="d-flex align-items-center popover-info">
+                                    <ul class="list-inline product-star-rating align-items-center d-cursor my-0 p-0">
+                                        <li class="list-inline-item text-warning">&starf;</li>
+                                        <li class="list-inline-item text-warning">&starf;</li>
+                                        <li class="list-inline-item text-warning">&starf;</li>
+                                        <li class="list-inline-item text-warning">&starf;</li>
+                                        <li class="list-inline-item text-muted">&star;</li>
+                                    </ul>
+                                    <p class="text-sm text-muted ms-1 my-0 py-0">453 reviews</p>
+                                </div>
+                                <!-- /.Star Rating -->
 
-                            <button class="btn bg-app-color btn-block rounded-0 text-white d-flex align-items-center justify-content-center">
-                                <i class="bi bi-cart-plus me-1"></i> Add to cart
-                            </button>
-                            <a href="details.html" role="button" class="d-flex align-items-center justify-content-center text-faded text-sm mt-2">
-                                <i class="bi bi-eye me-1"></i> Quick view
-                            </a>
+                                <button class="btn bg-app-color btn-block rounded-0 text-white d-flex align-items-center justify-content-center">
+                                    <i class="bi bi-cart-plus me-1"></i> Add to cart
+                                </button>
+                                <a href="details.html" role="button" class="d-flex align-items-center justify-content-center text-faded text-sm mt-2">
+                                    <i class="bi bi-eye me-1"></i> Quick view
+                                </a>
+                            </div>
                         </div>
                     </div>
                     <!-- /.Product Card -->
@@ -1028,25 +1067,27 @@
                             </div>
                             <!-- /.Product Pricing & Rating -->
 
-                            <!-- Star Rating -->
-                            <div class="d-flex align-items-center popover-info">
-                                <ul class="list-inline product-star-rating align-items-center d-cursor my-0 p-0">
-                                    <li class="list-inline-item text-warning">&starf;</li>
-                                    <li class="list-inline-item text-warning">&starf;</li>
-                                    <li class="list-inline-item text-warning">&starf;</li>
-                                    <li class="list-inline-item text-warning">&starf;</li>
-                                    <li class="list-inline-item text-muted">&star;</li>
-                                </ul>
-                                <p class="text-sm text-muted ms-1 my-0 py-0">453 reviews</p>
-                            </div>
-                            <!-- /.Star Rating -->
+                            <div class="d-block card-actions">
+                                <!-- Star Rating -->
+                                <div class="d-flex align-items-center popover-info">
+                                    <ul class="list-inline product-star-rating align-items-center d-cursor my-0 p-0">
+                                        <li class="list-inline-item text-warning">&starf;</li>
+                                        <li class="list-inline-item text-warning">&starf;</li>
+                                        <li class="list-inline-item text-warning">&starf;</li>
+                                        <li class="list-inline-item text-warning">&starf;</li>
+                                        <li class="list-inline-item text-muted">&star;</li>
+                                    </ul>
+                                    <p class="text-sm text-muted ms-1 my-0 py-0">453 reviews</p>
+                                </div>
+                                <!-- /.Star Rating -->
 
-                            <button class="btn bg-app-color btn-block rounded-0 text-white d-flex align-items-center justify-content-center">
-                                <i class="bi bi-cart-plus me-1"></i> Add to cart
-                            </button>
-                            <a href="details.html" role="button" class="d-flex align-items-center justify-content-center text-faded text-sm mt-2">
-                                <i class="bi bi-eye me-1"></i> Quick view
-                            </a>
+                                <button class="btn bg-app-color btn-block rounded-0 text-white d-flex align-items-center justify-content-center">
+                                    <i class="bi bi-cart-plus me-1"></i> Add to cart
+                                </button>
+                                <a href="details.html" role="button" class="d-flex align-items-center justify-content-center text-faded text-sm mt-2">
+                                    <i class="bi bi-eye me-1"></i> Quick view
+                                </a>
+                            </div>
                         </div>
                     </div>
                     <!-- /.Product Card -->
@@ -1131,25 +1172,27 @@
                             </div>
                             <!-- /.card-scroller -->
 
-                            <!-- Star Rating -->
-                            <div class="d-flex align-items-center popover-info">
-                                <ul class="list-inline product-star-rating align-items-center d-cursor my-0 p-0">
-                                    <li class="list-inline-item text-warning">&starf;</li>
-                                    <li class="list-inline-item text-warning">&starf;</li>
-                                    <li class="list-inline-item text-warning">&starf;</li>
-                                    <li class="list-inline-item text-warning">&starf;</li>
-                                    <li class="list-inline-item text-muted">&star;</li>
-                                </ul>
-                                <p class="text-sm text-muted ms-1 my-0 py-0">453 reviews</p>
-                            </div>
-                            <!-- /.Star Rating -->
+                            <div class="d-block card-actions">
+                                <!-- Star Rating -->
+                                <div class="d-flex align-items-center popover-info">
+                                    <ul class="list-inline product-star-rating align-items-center d-cursor my-0 p-0">
+                                        <li class="list-inline-item text-warning">&starf;</li>
+                                        <li class="list-inline-item text-warning">&starf;</li>
+                                        <li class="list-inline-item text-warning">&starf;</li>
+                                        <li class="list-inline-item text-warning">&starf;</li>
+                                        <li class="list-inline-item text-muted">&star;</li>
+                                    </ul>
+                                    <p class="text-sm text-muted ms-1 my-0 py-0">453 reviews</p>
+                                </div>
+                                <!-- /.Star Rating -->
 
-                            <button class="btn bg-app-color btn-block rounded-0 text-white d-flex align-items-center justify-content-center">
-                                <i class="bi bi-cart-plus me-1"></i> Add to cart
-                            </button>
-                            <a href="details.html" role="button" class="d-flex align-items-center justify-content-center text-faded text-sm mt-2">
-                                <i class="bi bi-eye me-1"></i> Quick view
-                            </a>
+                                <button class="btn bg-app-color btn-block rounded-0 text-white d-flex align-items-center justify-content-center">
+                                    <i class="bi bi-cart-plus me-1"></i> Add to cart
+                                </button>
+                                <a href="details.html" role="button" class="d-flex align-items-center justify-content-center text-faded text-sm mt-2">
+                                    <i class="bi bi-eye me-1"></i> Quick view
+                                </a>
+                            </div>
                         </div>
                     </div>
                     <!-- /.Product Card -->
@@ -1234,25 +1277,27 @@
                             </div>
                             <!-- /.card-scroller -->
 
-                            <!-- Star Rating -->
-                            <div class="d-flex align-items-center popover-info">
-                                <ul class="list-inline product-star-rating align-items-center d-cursor my-0 p-0">
-                                    <li class="list-inline-item text-warning">&starf;</li>
-                                    <li class="list-inline-item text-warning">&starf;</li>
-                                    <li class="list-inline-item text-warning">&starf;</li>
-                                    <li class="list-inline-item text-warning">&starf;</li>
-                                    <li class="list-inline-item text-muted">&star;</li>
-                                </ul>
-                                <p class="text-sm text-muted ms-1 my-0 py-0">453 reviews</p>
-                            </div>
-                            <!-- /.Star Rating -->
+                            <div class="d-block card-actions">
+                                <!-- Star Rating -->
+                                <div class="d-flex align-items-center popover-info">
+                                    <ul class="list-inline product-star-rating align-items-center d-cursor my-0 p-0">
+                                        <li class="list-inline-item text-warning">&starf;</li>
+                                        <li class="list-inline-item text-warning">&starf;</li>
+                                        <li class="list-inline-item text-warning">&starf;</li>
+                                        <li class="list-inline-item text-warning">&starf;</li>
+                                        <li class="list-inline-item text-muted">&star;</li>
+                                    </ul>
+                                    <p class="text-sm text-muted ms-1 my-0 py-0">453 reviews</p>
+                                </div>
+                                <!-- /.Star Rating -->
 
-                            <button class="btn bg-app-color btn-block rounded-0 text-white d-flex align-items-center justify-content-center">
-                                <i class="bi bi-cart-plus me-1"></i> Add to cart
-                            </button>
-                            <a href="details.html" role="button" class="d-flex align-items-center justify-content-center text-faded text-sm mt-2">
-                                <i class="bi bi-eye me-1"></i> Quick view
-                            </a>
+                                <button class="btn bg-app-color btn-block rounded-0 text-white d-flex align-items-center justify-content-center">
+                                    <i class="bi bi-cart-plus me-1"></i> Add to cart
+                                </button>
+                                <a href="details.html" role="button" class="d-flex align-items-center justify-content-center text-faded text-sm mt-2">
+                                    <i class="bi bi-eye me-1"></i> Quick view
+                                </a>
+                            </div>
                         </div>
                     </div>
                     <!-- /.Product Card -->
@@ -1264,7 +1309,7 @@
 
     <footer class="footer">
         <!-- Social Media Section -->
-        <section>
+        <section class="social-media-grid">
             <div class="d-grid grid-2 w-100">
                 <a href="#" class="bg-pale-pink d-grid py-4">
                     <div class="d-block text-center m-auto">
@@ -1290,7 +1335,7 @@
         <!-- /.Social Media Section -->
 
         <!-- Site Map -->
-        <section class="bg-gray-dark">
+        <section class="bg-gray-dark pb-4 pb-md-0">
             <div class="container pt-3">
                 <div class="row g-3">
                     <div class="col-12 col-md-4">
@@ -1377,7 +1422,7 @@
         <section class="bg-darker py-4">
             <div class="container">
                 <div class="row g-1 justify-content-md-between">
-                    <div class="col-12 col-md-3">
+                    <div class="col-12 col-md-3 mb-3 mb-md-0">
                         <div class="d-flex align-items-center">
                             <i class="bi bi-truck lead-2x text-danger me-3"></i>
                             <div class="block lh-100">
@@ -1386,7 +1431,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-3">
+                    <div class="col-12 col-md-3 mb-3 mb-md-0">
                         <div class="d-flex align-items-center">
                             <i class="bi bi-cash-stack lead-2x text-danger me-3"></i>
                             <div class="block lh-100">
@@ -1395,7 +1440,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-3">
+                    <div class="col-12 col-md-3 mb-3 mb-md-0">
                         <div class="d-flex align-items-center">
                             <i class="bi bi-headset lead-2x text-danger me-3"></i>
                             <div class="block lh-100">
@@ -1404,7 +1449,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-3">
+                    <div class="col-12 col-md-3 mb-3 mb-md-0">
                         <div class="d-flex align-items-center">
                             <i class="bi bi-credit-card lead-2x text-danger me-3"></i>
                             <div class="block lh-100">
@@ -1422,10 +1467,10 @@
         <section class="bg-darker border-top border-secondary py-4">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-12 col-md-6">
-                        <div class="d-flex align-items-center">
-                            <img data-src="dist/images/app/Logo.png" src="dist/images/app/product-label.jpeg" loading="lazy" class="img-fluid lazy">
-                            <div class="dropup">
+                    <div class="col-12 col-md-6 text-center text-md-start mb-3">
+                        <div class="d-flex align-items-center justify-content-center justify-content-md-start">
+                            <img data-src="dist/images/app/Logo.png" src="dist/images/app/product-label.jpeg" loading="lazy" class="img-fluid logo lazy">
+                            <div class="dropup ms-2">
                                 <button class="btn btn-outline-light btn-lg d-flex align-items-center justify-content-center text-sm font-600" id="app-currencies" data-bs-toggle="dropdown" aria-expanded="false">
                                     <img src="dist/images/currencies/usd.png" width="27" height="14" alt="" class="me-2">
                                     <span class="dropdown-toggle">Eng / $</span>
@@ -1463,7 +1508,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 text-end">
+                    <div class="col-12 col-md-6 text-center text-md-end">
                         <ul class="list-inline">
                             <li class="list-inline-item">
                                 <a href="#" role="button" class="btn-social">
@@ -1488,8 +1533,8 @@
                         </ul>
                     </div>
                 </div>
-                <div class="row align-items-center my-2">
-                    <div class="col-12 col-md-6">
+                <div class="row align-items-md-center my-2">
+                    <div class="col-12 col-md-6 text-center text-md-start">
                         <ul class="list-inline m-0 p-0">
                             <li class="list-inline-item text-sm">
                                 <a href="#" class="text-faded">Outlets</a>
@@ -1503,22 +1548,22 @@
                             <li class="list-inline-item text-sm">
                                 <a href="#" class="text-faded">Privacy</a>
                             </li>
-                            <li class="list-inline-item">
+                            <li class="list-inline-item text-sm">
                                 <a href="#" class="text-faded">Terms of use</a>
                             </li>
                         </ul>
                     </div>
-                    <div class="col-12 col-md-6 text-md-end">
+                    <div class="col-12 col-md-6 text-center text-md-end">
                         <img src="dist/images/app/payment-icon.png" alt="" class="img-fluid">
                     </div>
                 </div>
-                <div class="row align-items-center mt-2">
-                    <div class="col-12 col-md-6">
+                <div class="row align-items-md-center w-100 mt-2">
+                    <div class="col-12 col-md-6 text-center text-md-start">
                         <h6 class="text-sm text-muted my-0">
                             &copy; 2021. Kumba Inc. All rights reserved.
                         </h6>
                     </div>
-                    <div class="col-12 col-md-6 text-md-end">
+                    <div class="col-12 col-md-6 text-center text-md-end">
                         <a href="http://twitter.com/tinaking92" class="text-muted text-sm">
                             Made with <i class="bi bi-heart-fill mx-1 text-danger"></i> by TinaKing
                         </a>
@@ -1528,92 +1573,6 @@
         </section>
         <!-- /.Copyrights -->
     </footer>
-
-    <!-- Account Forms Modal -->
-    <div class="modal fade" id="account-modal" tabindex="-1" aria-labelledby="account-modalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-            <div class="modal-content">
-                <div class="modal-header m-0 p-0">
-                    <nav class="modal-title">
-                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                            <button class="nav-link active" id="nav-login-tab" data-bs-toggle="tab" data-bs-target="#nav-login" type="button" role="tab" aria-controls="nav-login" aria-selected="true">
-                                <div class="d-flex align-items-center font-600">
-                                    <i class="bi bi-unlock nav-icon me-1"></i> Sign in
-                                </div>
-                            </button>
-                            <button class="nav-link" id="nav-register-tab" data-bs-toggle="tab" data-bs-target="#nav-register" type="button" role="tab" aria-controls="nav-register" aria-selected="false">
-                                <div class="d-flex align-items-center font-600">
-                                    <i class="bi bi-person nav-icon me-1"></i> Sign up
-                                </div>
-                            </button>
-                        </div>
-                    </nav>
-                    <button type="button" class="btn-close me-3" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="tab-content" id="nav-tabContent">
-                        <div class="tab-pane fade show active" id="nav-login" role="tabpanel" aria-labelledby="nav-login-tab">
-                            <form action="" method="post" class="row g-3 needs-validation" id="login-form" novalidate>
-                                <div class="col-12">
-                                    <label for="fullname" class="form-label font-600 mb-0">Fullname or email address</label>
-                                    <input type="text" class="form-control" id="fullname" name="fullname" autofocus required>
-                                    <div class="invalid-feedback">
-                                        Please enter your fullname or email address.
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <label for="password" class="form-label font-600 mb-0">Password</label>
-                                    <input type="password" class="form-control" id="password" name="password" required>
-                                    <div class="invalid-feedback">
-                                        Please enter your password.
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <button class="btn btn-primary btn-block font-600" type="submit">Sign in</button>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="tab-pane fade" id="nav-register" role="tabpanel" aria-labelledby="nav-register-tab">
-                            <form action="" method="post" class="row g-3 needs-validation" id="register-form" novalidate>
-                                <div class="col-12">
-                                    <label for="fullname" class="form-label font-600 mb-0">Full name</label>
-                                    <input type="text" class="form-control" id="fullname" name="fullname" autofocus required>
-                                    <div class="invalid-feedback">
-                                        Please enter your fullname.
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <label for="email" class="form-label font-600 mb-0">Email</label>
-                                    <input type="email" class="form-control" id="email" name="email" required>
-                                    <div class="invalid-feedback">
-                                        Please enter your email address.
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <label for="password" class="form-label font-600 mb-0">Password</label>
-                                    <input type="password" class="form-control" id="password" name="password" required>
-                                    <div class="invalid-feedback">
-                                        Please enter your password.
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <label for="confirm-password" class="form-label font-600 mb-0">Confirm password</label>
-                                    <input type="password" class="form-control" id="password" name="password" required>
-                                    <div class="invalid-feedback">
-                                        Please enter your password confirmation.
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <button class="btn btn-primary btn-block font-600" type="submit">Sign up</button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- /.Account Forms Modal -->
 
     <!-- JQuery -->
     <script src="dist/plugins/jquery/jquery.min.js"></script>
