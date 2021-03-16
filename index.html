@@ -28,14 +28,14 @@
 <body>
     <div class="content-wrapper">
         <!-- Top Nav -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light my-0 py-0">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light d-none d-md-block my-0 py-0">
             <div class="container">
                 <div class="d-flex align-items-center justify-content-between w-100">
                     <div class="dropdown">
-                        <a href="#" data-bs-toggle="dropdown" aria-expanded="false">
-                            <small class="dropdown-toggle">Help</small>
+                        <a href="#" id="help-menu" data-bs-toggle="dropdown" aria-expanded="false">
+                            <small class="dropdown-toggle">Need Help?</small>
                         </a>
-                        <div class="dropdown-menu shadow-sm my-0 py-0">
+                        <div class="dropdown-menu shadow-sm help-menu my-0 py-0" aria-labelledby="help-menu">
                             <div class="dropdown-item">
                                 <a href="#" class="d-flex align-items-center">
                                     <i class="bi bi-headset me-1"></i> Customer Service
@@ -60,9 +60,9 @@
         <!-- /.Top Nav -->
 
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top my-0 py-0">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top d-none d-md-block my-0 py-0">
             <div class="container">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="index.html">
                     <img src="dist/images/app/kumba-logo.jpeg" alt="" width="135" height="76" class="d-inline-block align-top">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -132,7 +132,7 @@
                                             <div class="d-flex align-items-center">
                                                 <img src="dist/images/products/15f460c7f56472.jpg" width="60" height="60" class="me-2">
                                                 <div class="d-block">
-                                                    <h6 class="my-0 text-capitalize">women's color sneakers</h6>
+                                                    <h6 class="my-0 text-capitalize text-faded">women's color sneakers</h6>
                                                     <div class="d-flex align-items-center">
                                                         <div class="d-flex align-items-center text-app-color font-600">
                                                             <span class="currency-symbol">$</span>
@@ -144,7 +144,7 @@
                                                             <span>1</span>
                                                         </div>
                                                         <button class="btn btn-outline-default btn-sm ms-auto mt-1" title="Remove from cart">
-                                                            <i class="bi bi-trash"></i>
+                                                            <i class="bi bi-trash text-danger"></i>
                                                         </button>
                                                     </div>
                                                 </div>
@@ -157,7 +157,7 @@
                                             <div class="d-flex align-items-center">
                                                 <img src="dist/images/products/15f47370737dde.jpg" width="60" height="60" class="me-2">
                                                 <div class="d-block">
-                                                    <h6 class="my-0 text-capitalize">women's color sneakers</h6>
+                                                    <h6 class="my-0 text-capitalize text-faded">women's color sneakers</h6>
                                                     <div class="d-flex align-items-center">
                                                         <div class="d-flex align-items-center text-app-color font-600">
                                                             <span class="currency-symbol">$</span>
@@ -169,7 +169,7 @@
                                                             <span>1</span>
                                                         </div>
                                                         <button class="btn btn-outline-default btn-sm ms-auto mt-1" title="Remove from cart">
-                                                            <i class="bi bi-trash"></i>
+                                                            <i class="bi bi-trash text-danger"></i>
                                                         </button>
                                                     </div>
                                                 </div>
@@ -182,7 +182,7 @@
                                             <div class="d-flex align-items-center">
                                                 <img src="dist/images/products/15f473871f36bf.jpg" width="60" height="60" class="me-2">
                                                 <div class="d-block">
-                                                    <h6 class="my-0 text-capitalize">women's color sneakers</h6>
+                                                    <h6 class="my-0 text-capitalize text-faded">women's color sneakers</h6>
                                                     <div class="d-flex align-items-center">
                                                         <div class="d-flex align-items-center text-app-color font-600">
                                                             <span class="currency-symbol">$</span>
@@ -194,7 +194,7 @@
                                                             <span>1</span>
                                                         </div>
                                                         <button class="btn btn-outline-default btn-sm ms-auto mt-1" title="Remove from cart">
-                                                            <i class="bi bi-trash"></i>
+                                                            <i class="bi bi-trash text-danger"></i>
                                                         </button>
                                                     </div>
                                                 </div>
@@ -207,7 +207,7 @@
                                             <div class="d-flex align-items-center">
                                                 <img src="dist/images/products/15f47d8a98a002.jpg" width="60" height="60" class="me-2">
                                                 <div class="d-block">
-                                                    <h6 class="my-0 text-capitalize">women's color sneakers</h6>
+                                                    <h6 class="my-0 text-capitalize text-faded">women's color sneakers</h6>
                                                     <div class="d-flex align-items-center">
                                                         <div class="d-flex align-items-center text-app-color font-600">
                                                             <span class="currency-symbol">$</span>
@@ -219,7 +219,7 @@
                                                             <span>1</span>
                                                         </div>
                                                         <button class="btn btn-outline-default btn-sm ms-auto mt-1" title="Remove from cart">
-                                                            <i class="bi bi-trash"></i>
+                                                            <i class="bi bi-trash text-danger"></i>
                                                         </button>
                                                     </div>
                                                 </div>
@@ -273,31 +273,44 @@
                                 </a>
                                 <div class="dropdown-menu dropdown-menu-end user-menu" aria-labelledby="account-menu">
                                     <div class="d-flex align-items-center justify-content-center">
-                                        <img src="dist/images/greeting-icons/sunrise.svg" height="64" width="64" alt="" class="greeting-icon me-1">
+                                        <img src="dist/images/greeting-icons/sunrise.svg" height="64" width="64" alt="" class="greeting-icon">
                                         <h6 class="text-app-color user-greeting my-0">Good morning!</h6>
                                     </div>
                                     <div class="container">
-                                        <h6 class="text-sm text-center">Sign in for the best shopping experience.</h6>
+                                        <h6 class="text-sm text-center text-faded">Sign in for the best shopping experience.</h6>
                                         <a href="login.html" role="button" class="btn btn-block bg-app-color btn-sm text-white">
                                             Sign in
                                         </a>
-                                        <fieldset>
+                                        <fieldset class="mb-2">
                                             <legend class="text-center text-sm text-muted font-600 mb-0">OR</legend>
-                                            <div class="d-flex align-items-center justify-content-center">
-                                                <a href="#">
-                                                    <i class="bi bi-google text-app-color lead"></i>
-                                                </a>
-                                                <a href="#">
-                                                    <i class="bi bi-facebook text-app-color lead ms-3"></i>
-                                                </a>
-                                                <a href="#">
-                                                    <i class="bi bi-instagram text-app-color lead mx-3"></i>
-                                                </a>
-                                                <a href="#">
-                                                    <i class="bi bi-twitter text-app-color lead"></i>
-                                                </a>
-                                            </div>
+                                            <ul class="list-inline d-flex justify-content-center">
+                                                <li class="list-inline-item">
+                                                    <a href="#" role="button" class="btn-social">
+                                                        <i class="bi bi-facebook icon-md"></i>
+                                                    </a>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <a href="#" role="button" class="btn-social">
+                                                        <i class="bi bi-instagram icon-md"></i>
+                                                    </a>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <a href="#" role="button" class="btn-social">
+                                                        <i class="bi bi-linkedin icon-md"></i>
+                                                    </a>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <a href="#" role="button" class="btn-social">
+                                                        <i class="bi bi-twitter icon-md"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
                                         </fieldset>
+                                        <hr class="my-1">
+                                        <h6 class="text-sm text-muted">New customer?</h6>
+                                        <a href="register.html" role="button" class="btn btn-block btn-danger btn-sm text-white">
+                                            Join free
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -308,19 +321,115 @@
         </nav>
         <!-- /.Navbar -->
 
-        <!-- Delivery Banner -->
-        <div class="delivery-banner my-0 w-100">
-            <div class="bg-app-color delivery-section text-white text-center py-2">
-                <h6 class="text-uppercase text-sm font-600 my-0">$3 delivery in harare</h6>
+        <!-- Mobile Top Navbars -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark d-lg-none my-0 py-2">
+            <div class="container-fluid">
+                <div class="row align-items-center justify-content-between w-100">
+                    <div class="dropdown col-6">
+                        <a href="#" class="text-faded dropdown-toggle" id="help-desk" data-bs-toggle="dropdown" aria-expanded="false">
+                            Need help?
+                        </a>
+                        <div class="dropdown-menu rounded-2" aria-labelledby="help-desk">
+                            <div class="dropdown-item py-1">
+                                <div class="d-flex align-items-center font-600">
+                                    <i class="bi bi-headset icon-md me-2"></i>
+                                    <span class="mt-1">+263 77 602 1140</span>
+                                </div>
+                            </div>
+                            <div class="dropdown-item py-1">
+                                <div class="d-flex align-items-center font-600">
+                                    <i class="bi bi-geo-alt icon-md me-2"></i>
+                                    <span class="mt-1">Order tracking</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown col-6 text-end">
+                        <a href="#" id="currency-btn" class="d-flex align-items-center justify-content-end text-white font-600" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="dist/images/currencies/usd.png" width="27" height="14" alt="" class="me-2">
+                            <span class="dropdown-toggle">Eng / $</span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end locale-menu rounded-2 my-0 py-0" aria-labelledby="currency-btn">
+                            <div class="dropdown-item">
+                                <select class="form-select form-select-sm mt-2" id="app-currencies" aria-label="app-currencies">
+                                    <option selected value="usd">$ USD</option>
+                                    <option value="zar">R ZAR</option>
+                                    <option value="zwl">$ ZWL</option>
+                                </select>
+                            </div>
+                            <a href="#" class="dropdown-item d-flex align-items-center">
+                                <img src="dist/images/lang/flag-of-Netherlands.png" width="27" height="14" alt="" class="me-2"> Deutsch
+                            </a>
+                            <a href="#" class="dropdown-item d-flex align-items-center">
+                                <img src="dist/images/lang/flag-of-France.png" width="27" height="14" alt="" class="me-2"> French
+                            </a>
+                            <a href="#" class="dropdown-item d-flex align-items-center">
+                                <img src="dist/images/lang/flag-of-United-Kingdom.png" width="27" height="14" alt="" class="me-2"> GB
+                            </a>
+                            <a href="#" class="dropdown-item d-flex align-items-center">
+                                <img src="dist/images/lang/flag-of-Germany.png" width="27" height="14" alt="" class="me-2"> German
+                            </a>
+                            <a href="#" class="dropdown-item d-flex align-items-center">
+                                <img src="dist/images/lang/flag-of-Italy.png" width="27" height="14" alt="" class="me-2"> Italiano
+                            </a>
+                            <a href="#" class="dropdown-item d-flex align-items-center">
+                                <img src="dist/images/lang/flag-of-Spain.png" width="27" height="14" alt="" class="me-2"> Spanish
+                            </a>
+                            <a href="#" class="dropdown-item d-flex align-items-center">
+                                <img src="dist/images/lang/flag-of-United-States-of-America.png" width="27" height="14" alt="" class="me-2"> USA
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="bg-white"></div>
-            <div class="bg-app-color delivery-section text-white text-center py-2">
-                <h6 class="text-uppercase text-sm font-600 my-0">ROCKET DELIVERY – 90 MINUTE DELIVERY FOR ELIGIBLE ITEMS</h6>
+        </nav>
+        <nav class="navbar bg-white shadow-sm sticky-top my-0 py-0">
+            <div class="d-flex align-items-center">
+                <a class="navbar-brand" href="index.html">
+                    <img src="dist/images/app/kumba-logo.jpeg" alt="" width="72" height="41" class="d-inline-block align-top">
+                </a>
+                <ul class="list-inline ms-auto my-0 p-0">
+                    <li class="list-inline-item" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Wishlist">
+                        <a href="wishlist.html" class="nav-item">
+                            <div class="d-block nav-circle d-grid position-relative">
+                                <i class="bi bi-heart icon-md m-auto"></i>
+                                <span class="badge bg-app-color text-white nav-badge rounded-pill text-white position-absolute">3</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#" class="nav-item d-flex align-items-center">
+                            <div class="d-block nav-circle d-grid position-relative">
+                                <i class="bi bi-cart2 icon-md m-auto"></i>
+                                <span class="badge bg-app-color text-white nav-badge rounded-pill text-white position-absolute">3</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#" class="nav-item d-flex align-items-center">
+                            <div class="d-block nav-circle d-grid position-relative">
+                                <img src="" class="rounded-circle">
+                            </div>
+                        </a>
+                    </li>
+                </ul>
             </div>
-        </div>
-        <!-- /.Delivery Banner -->
+        </nav>
+        <!-- /.Mobile Top Navbars -->
 
         <div class="page-content container mb-5">
+            <!-- Delivery Banner -->
+            <div class="delivery-banner my-0 w-100">
+                <div class="bg-app-color delivery-section text-white text-center py-2">
+                    <h6 class="text-uppercase text-sm font-600 my-0">$3 delivery in harare</h6>
+                </div>
+                <div class="bg-white"></div>
+                <div class="bg-app-color delivery-section text-white text-center py-2">
+                    <h6 class="text-uppercase text-sm font-600 my-0">ROCKET DELIVERY – 90 MINUTE DELIVERY FOR ELIGIBLE ITEMS</h6>
+                </div>
+            </div>
+            <!-- /.Delivery Banner -->
+
             <!-- Showcase Carousel -->
             <a href="#">
                 <img src="dist/images/backgrounds/timthumb.png" alt="" class="img-fluid">
@@ -331,7 +440,7 @@
             <div class="categories-section my-2">
                 <!-- Category-card -->
                 <div class="category-card">
-                    <img src="dist/images/backgrounds/1612728525Lipstick 6.jpg" class="category-image">
+                    <img data-src="dist/images/backgrounds/1612728525Lipstick 6.jpg" src="dist/images/app/product-label.jpeg" loading="lazy" class="category-image lazy">
                     <button class="btn btn-outline-dark rounded-0 btn-lg">
                         Face wash
                     </button>
@@ -341,7 +450,7 @@
 
                 <!-- Category-card -->
                 <div class="category-card">
-                    <img src="dist/images/backgrounds/1615138986Fenty Glass Bomb.jpg" class="category-image">
+                    <img data-src="dist/images/backgrounds/1615138986Fenty Glass Bomb.jpg" src="dist/images/app/product-label.jpeg" loading="lazy" class="category-image lazy">
                     <button class="btn btn-outline-dark rounded-0 btn-lg">
                         Make up
                     </button>
@@ -351,7 +460,7 @@
 
                 <!-- Category-card -->
                 <div class="category-card">
-                    <img src="dist/images/backgrounds/1612729262Lipstick 2.jpg" class="category-image">
+                    <img data-src="dist/images/backgrounds/1612729262Lipstick 2.jpg" src="dist/images/app/product-label.jpeg" loading="lazy" class="category-image lazy">
                     <button class="btn btn-outline-dark rounded-0 btn-lg">
                         Combos
                     </button>
@@ -361,7 +470,7 @@
 
                 <!-- Category-card -->
                 <div class="category-card">
-                    <img src="dist/images/backgrounds/1612728560Lipstick 5.jpg" class="category-image">
+                    <img data-src="dist/images/backgrounds/1612728560Lipstick 5.jpg" src="dist/images/app/product-label.jpeg" loadig="lazy" class="category-image lazy">
                     <button class="btn btn-outline-dark rounded-0 btn-lg">
                         Shampoo
                     </button>
@@ -387,7 +496,7 @@
                             <i class="bi bi-heart text-danger m-auto"></i>
                         </span>
                         <div class="product-img-wrapper">
-                            <img src="dist/images/products/lip-stick.jpg">
+                            <img data-src="dist/images/products/lip-stick.jpg" src="dist/images/app/product-label.jpeg" loading="lazy" class="lazy">
                         </div>
                         <div class="d-block">
                             <h6 class="text-dark text-uppercase text-sm font-600 my-0">
@@ -415,7 +524,7 @@
                                     </div>
                                     <!-- /.Previous Product Price -->
                                 </div>
-                                <img src="dist/images/app/rocket-delivery.png" width="80" height="21" alt="">
+                                <img data-src="dist/images/app/rocket-delivery.png" src="dist/images/app/product-label.jpeg" loading="lazy" class="lazy" width="80" height="21" alt="">
                             </div>
                             <!-- /.Product Pricing & Rating -->
 
@@ -490,7 +599,7 @@
                             <i class="bi bi-heart text-danger m-auto"></i>
                         </span>
                         <div class="product-img-wrapper">
-                            <img src="dist/images/products/1615751532Whey protine.jpg">
+                            <img data-src="dist/images/products/1615751532Whey protine.jpg" src="dist/images/app/product-label.jpeg" loading="lazy" class="lazy">
                         </div>
                         <div class="d-block">
                             <h6 class="text-dark text-uppercase text-sm font-600 my-0">
@@ -518,7 +627,7 @@
                                     </div>
                                     <!-- /.Previous Product Price -->
                                 </div>
-                                <img src="dist/images/app/rocket-delivery.png" width="80" height="21" alt="">
+                                <img data-src="dist/images/app/rocket-delivery.png" src="dist/images/app/product-label.jpeg" loading="lazy" class="lazy" width="80" height="21" alt="">
                             </div>
                             <!-- /.Product Pricing & Rating -->
 
@@ -552,7 +661,7 @@
                             <i class="bi bi-heart text-danger m-auto"></i>
                         </span>
                         <div class="product-img-wrapper">
-                            <img src="dist/images/products/1612729262Lipstick 2.jpg">
+                            <img data-src="dist/images/products/1612729262Lipstick 2.jpg" src="dist/images/app/product-label.jpeg" loading="lazy" class="lazy">
                         </div>
                         <div class="d-block">
                             <h6 class="text-dark text-uppercase text-sm font-600 my-0">
@@ -580,7 +689,7 @@
                                     </div>
                                     <!-- /.Previous Product Price -->
                                 </div>
-                                <img src="dist/images/app/rocket-delivery.png" width="80" height="21" alt="">
+                                <img data-src="dist/images/app/rocket-delivery.png" src="dist/images/app/product-label.jpeg" loading="lazy" class="lazy" width="80" height="21" alt="">
                             </div>
                             <!-- /.Product Pricing & Rating -->
 
@@ -683,7 +792,7 @@
                                     </div>
                                     <!-- /.Previous Product Price -->
                                 </div>
-                                <img src="dist/images/app/rocket-delivery.png" width="80" height="21" alt="">
+                                <img data-src="dist/images/app/rocket-delivery.png" src="dist/images/app/product-label.jpeg" loading="lazy" class="lazy" width="80" height="21" alt="">
                             </div>
                             <!-- /.Product Pricing & Rating -->
 
@@ -759,10 +868,10 @@
                 <h5 class="lead-2x text-dark font-600 mt-2">Featured by local product</h5>
                 <div class="d-grid grid-2">
                     <a href="category.html">
-                        <img src="dist/images/backgrounds/16139560771.png" alt="" class="img-fluid">
+                        <img data-src="dist/images/backgrounds/16139560771.png" src="dist/images/app/product-label.jpeg" loading="lazy" class="img-fluid lazy">
                     </a>
                     <a href="category.html">
-                        <img src="dist/images/backgrounds/1613956545Fenty B E A U T Y (1).png" alt="" class="img-fluid">
+                        <img data-src="dist/images/backgrounds/1613956545Fenty B E A U T Y (1).png" src="dist/images/app/product-label.jpeg" loading="lazy" class="img-fluid lazy">
                     </a>
                 </div>
             </section>
@@ -784,7 +893,7 @@
                             <i class="bi bi-heart text-danger m-auto"></i>
                         </span>
                         <div class="product-img-wrapper">
-                            <img src="dist/images/products/lip-stick.jpg">
+                            <img data-src="dist/images/products/lip-stick.jpg" src="dist/images/app/product-label.jpeg" loading="lazy" class="lazy">
                         </div>
                         <div class="d-block">
                             <h6 class="text-dark text-uppercase text-sm font-600 my-0">
@@ -812,7 +921,7 @@
                                     </div>
                                     <!-- /.Previous Product Price -->
                                 </div>
-                                <img src="dist/images/app/rocket-delivery.png" width="80" height="21" alt="">
+                                <img data-src="dist/images/app/rocket-delivery.png" src="dist/images/app/product-label.jpeg" loading="lazy" class="lazy" width="80" height="21" alt="">
                             </div>
                             <!-- /.Product Pricing & Rating -->
 
@@ -887,7 +996,7 @@
                             <i class="bi bi-heart text-danger m-auto"></i>
                         </span>
                         <div class="product-img-wrapper">
-                            <img src="dist/images/products/1615751532Whey protine.jpg">
+                            <img data-src="dist/images/products/1615751532Whey protine.jpg" src="dist/images/app/product-label.jpeg" loading="lazy" class="lazy">
                         </div>
                         <div class="d-block">
                             <h6 class="text-dark text-uppercase text-sm font-600 my-0">
@@ -915,7 +1024,7 @@
                                     </div>
                                     <!-- /.Previous Product Price -->
                                 </div>
-                                <img src="dist/images/app/rocket-delivery.png" width="80" height="21" alt="">
+                                <img data-src="dist/images/app/rocket-delivery.png" src="dist/images/app/product-label.jpeg" loading="lazy" class="lazy" width="80" height="21" alt="">
                             </div>
                             <!-- /.Product Pricing & Rating -->
 
@@ -949,7 +1058,7 @@
                             <i class="bi bi-heart text-danger m-auto"></i>
                         </span>
                         <div class="product-img-wrapper">
-                            <img src="dist/images/products/1612729262Lipstick 2.jpg">
+                            <img data-src="dist/images/products/1612729262Lipstick 2.jpg" src="dist/images/app/product-label.jpeg" loading="lazy" class="lazy">
                         </div>
                         <div class="d-block">
                             <h6 class="text-dark text-uppercase text-sm font-600 my-0">
@@ -977,7 +1086,7 @@
                                     </div>
                                     <!-- /.Previous Product Price -->
                                 </div>
-                                <img src="dist/images/app/rocket-delivery.png" width="80" height="21" alt="">
+                                <img data-src="dist/images/app/rocket-delivery.png" src="dist/images/app/product-label.jpeg" loading="lazy" class="lazy" width="80" height="21" alt="">
                             </div>
                             <!-- /.Product Pricing & Rating -->
 
@@ -1080,7 +1189,7 @@
                                     </div>
                                     <!-- /.Previous Product Price -->
                                 </div>
-                                <img src="dist/images/app/rocket-delivery.png" width="80" height="21" alt="">
+                                <img data-src="dist/images/app/rocket-delivery.png" src="dist/images/app/product-label.jpeg" loading="lazy" class="lazy" width="80" height="21" alt="">
                             </div>
                             <!-- /.Product Pricing & Rating -->
 
@@ -1176,7 +1285,7 @@
                     </div>
                 </a>
             </div>
-            <img src="dist/images/backgrounds/kumbastore-insta.jpg" alt="" class="img-fluid">
+            <img data-src="dist/images/backgrounds/kumbastore-insta.jpg" src="dist/images/app/product-label.jpeg" class="img-fluid lazy">
         </section>
         <!-- /.Social Media Section -->
 
@@ -1241,7 +1350,7 @@
                                     <a href="#">Careers</a>
                                 </li>
                                 <li>
-                                    <a href="#">News</a>
+                                    <a href="#">Blog</a>
                                 </li>
                             </ul>
                         </div>
@@ -1315,7 +1424,7 @@
                 <div class="row align-items-center">
                     <div class="col-12 col-md-6">
                         <div class="d-flex align-items-center">
-                            <img src="dist/images/app/Logo.png" alt="" class="img-fluid">
+                            <img data-src="dist/images/app/Logo.png" src="dist/images/app/product-label.jpeg" loading="lazy" class="img-fluid lazy">
                             <div class="dropup">
                                 <button class="btn btn-outline-light btn-lg d-flex align-items-center justify-content-center text-sm font-600" id="app-currencies" data-bs-toggle="dropdown" aria-expanded="false">
                                     <img src="dist/images/currencies/usd.png" width="27" height="14" alt="" class="me-2">
@@ -1411,7 +1520,7 @@
                     </div>
                     <div class="col-12 col-md-6 text-md-end">
                         <a href="http://twitter.com/tinaking92" class="text-muted text-sm">
-                            Made with <i class="bi bi-heart-fill text-danger"></i> by TinaKing
+                            Made with <i class="bi bi-heart-fill mx-1 text-danger"></i> by TinaKing
                         </a>
                     </div>
                 </div>

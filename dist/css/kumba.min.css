@@ -36,7 +36,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 ::-webkit-scrollbar {
-    width: 5px;
+    width: 3px;
     height: 8px;
 }
 
@@ -45,7 +45,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #868686 !important;
+    background: var(--app-color) !important;
     box-shadow: inset 0 0 0 1px rgba(0, 0, 0, .25), inset 0 -1px 0 rgba(0, 0, 0, .05);
     border-radius: 6px;
     height: 10px !important
@@ -323,6 +323,10 @@ span[role="button"] {
 
 
 /* Dropdown & Lists */
+
+.help-menu {
+    z-index: 1050;
+}
 
 .user-menu {
     width: 250px;
