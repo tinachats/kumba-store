@@ -1251,8 +1251,8 @@
                         <form action="" method="post" class="needs-validation position-relative" id="mailing-list-form" novalidate>
                             <i class="bi bi-envelope position-absolute input-group-icon"></i>
                             <div class="input-group mt-3">
-                                <input type="text" class="form-control ps-4" placeholder="Your email" aria-label="Your email" aria-describedby="subscribe-button">
-                                <span class="input-group-text bg-danger text-white font-600" id="subscribe-button">Subscribe</span>
+                                <input type="email" class="form-control ps-4" placeholder="Your email" aria-label="Your email" aria-describedby="subscribe-button" required>
+                                <button type="submit" class="input-group-text bg-danger text-white font-600 cursor outline-0" id="subscribe-button">Subscribe</button>
                             </div>
                         </form>
                         <p class="text-light text-sm font-600 lh-5 my-0 py-0">
@@ -1267,7 +1267,7 @@
         <!-- Our Services -->
         <section class="bg-darker py-4">
             <div class="container">
-                <div class="row g-3">
+                <div class="row g-1 justify-content-md-between">
                     <div class="col-12 col-md-3">
                         <div class="d-flex align-items-center">
                             <i class="bi bi-truck lead-2x text-danger me-3"></i>
@@ -1312,13 +1312,107 @@
         <!-- Copyrights -->
         <section class="bg-darker border-top border-secondary py-4">
             <div class="container">
-                <div class="d-flex align-items-center">
-                    <img src="dist/images/app/Logo.png" alt="" class="img-fluid">
-                    <div class="dropdown">
-                        <button class="btn btn-outline-light btn-lg d-flex align-items-center justify-content-center text-sm font-600" data-bs-toggle="dropdown" aria-expanded="false">
-                            <img src="dist/images/currencies/usd.png" width="27" height="14" alt="" class="me-2">
-                            <span class="dropdown-toggle">Eng / $</span>
-                        </button>
+                <div class="row align-items-center">
+                    <div class="col-12 col-md-6">
+                        <div class="d-flex align-items-center">
+                            <img src="dist/images/app/Logo.png" alt="" class="img-fluid">
+                            <div class="dropup">
+                                <button class="btn btn-outline-light btn-lg d-flex align-items-center justify-content-center text-sm font-600" id="app-currencies" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="dist/images/currencies/usd.png" width="27" height="14" alt="" class="me-2">
+                                    <span class="dropdown-toggle">Eng / $</span>
+                                </button>
+                                <div class="dropdown-menu locale-menu rounded-2 my-0 py-0">
+                                    <div class="dropdown-item">
+                                        <select class="form-select form-select-sm mt-2" id="app-currencies" aria-label="app-currencies">
+                                            <option selected value="usd">$ USD</option>
+                                            <option value="zar">R ZAR</option>
+                                            <option value="zwl">$ ZWL</option>
+                                        </select>
+                                    </div>
+                                    <a href="#" class="dropdown-item d-flex align-items-center">
+                                        <img src="dist/images/lang/flag-of-Netherlands.png" width="27" height="14" alt="" class="me-2"> Deutsch
+                                    </a>
+                                    <a href="#" class="dropdown-item d-flex align-items-center">
+                                        <img src="dist/images/lang/flag-of-France.png" width="27" height="14" alt="" class="me-2"> French
+                                    </a>
+                                    <a href="#" class="dropdown-item d-flex align-items-center">
+                                        <img src="dist/images/lang/flag-of-United-Kingdom.png" width="27" height="14" alt="" class="me-2"> GB
+                                    </a>
+                                    <a href="#" class="dropdown-item d-flex align-items-center">
+                                        <img src="dist/images/lang/flag-of-Germany.png" width="27" height="14" alt="" class="me-2"> German
+                                    </a>
+                                    <a href="#" class="dropdown-item d-flex align-items-center">
+                                        <img src="dist/images/lang/flag-of-Italy.png" width="27" height="14" alt="" class="me-2"> Italiano
+                                    </a>
+                                    <a href="#" class="dropdown-item d-flex align-items-center">
+                                        <img src="dist/images/lang/flag-of-Spain.png" width="27" height="14" alt="" class="me-2"> Spanish
+                                    </a>
+                                    <a href="#" class="dropdown-item d-flex align-items-center">
+                                        <img src="dist/images/lang/flag-of-United-States-of-America.png" width="27" height="14" alt="" class="me-2"> USA
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 text-end">
+                        <ul class="list-inline">
+                            <li class="list-inline-item">
+                                <a href="#" role="button" class="btn-social">
+                                    <i class="bi bi-facebook icon-md"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" role="button" class="btn-social">
+                                    <i class="bi bi-instagram icon-md"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" role="button" class="btn-social">
+                                    <i class="bi bi-linkedin icon-md"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" role="button" class="btn-social">
+                                    <i class="bi bi-twitter icon-md"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row align-items-center my-2">
+                    <div class="col-12 col-md-6">
+                        <ul class="list-inline m-0 p-0">
+                            <li class="list-inline-item text-sm">
+                                <a href="#" class="text-faded">Outlets</a>
+                            </li>
+                            <li class="list-inline-item text-sm">
+                                <a href="#" class="text-faded">Affiliates</a>
+                            </li>
+                            <li class="list-inline-item text-sm">
+                                <a href="#" class="text-faded">Support</a>
+                            </li>
+                            <li class="list-inline-item text-sm">
+                                <a href="#" class="text-faded">Privacy</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" class="text-faded">Terms of use</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-6 text-md-end">
+                        <img src="dist/images/app/payment-icon.png" alt="" class="img-fluid">
+                    </div>
+                </div>
+                <div class="row align-items-center mt-2">
+                    <div class="col-12 col-md-6">
+                        <h6 class="text-sm text-muted my-0">
+                            &copy; 2021. Kumba Inc. All rights reserved.
+                        </h6>
+                    </div>
+                    <div class="col-12 col-md-6 text-md-end">
+                        <a href="http://twitter.com/tinaking92" class="text-muted text-sm">
+                            Made with <i class="bi bi-heart-fill text-danger"></i> by TinaKing
+                        </a>
                     </div>
                 </div>
             </div>
